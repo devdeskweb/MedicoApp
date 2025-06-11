@@ -1,48 +1,67 @@
+<form
+  method="POST"
+  action="https://formsubmit.co/404d63f2640e859e8e318e2a57bf21db"
+  style="display: none"
+  #hiddenForm
+>
+  <input type="hidden" name="_subject" value="New Appointment Request - Medico App" />
+  <input type="hidden" name="_template" value="table" />
+  <input type="hidden" name="_captcha" value="false" />
+  <input type="hidden" name="_next" [value]="nextRedirectUrl" />
+  <input type="hidden" name="Message" value="Dear Dr. Sachin, you have received a new appointment request from a patient." />
+  <input type="hidden" name="First Name" [value]="contactForm.value.firstName" />
+  <input type="hidden" name="Last Name" [value]="contactForm.value.lastName" />
+  <input type="hidden" name="Email" [value]="contactForm.value.email" />
+  <input type="hidden" name="Mobile" [value]="contactForm.value.mobile" />
+</form>
+
 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="form-head d-flex flex-column gap-4 py-2">
   <div class="d-flex flex-column gap-2">
     <label class="input-label-text">First Name*</label>
     <div class="d-flex align-items-center rounded-2 border" style="padding: 0.725rem;">
-      <input type="text" class="input-box" formControlName="firstName" placeholder="John" />
+      <input required type="text" class="input-box" formControlName="firstName" placeholder="John" />
     </div>
+    <div *ngIf="submitted && f.firstName.errors" class="text-danger">First name is required.</div>
   </div>
 
   <div class="d-flex flex-column gap-2">
     <label class="input-label-text">Last Name*</label>
     <div class="d-flex align-items-center rounded-2 border" style="padding: 0.725rem;">
-      <input type="text" class="input-box" formControlName="lastName" placeholder="Lewis" />
+      <input required type="text" class="input-box" formControlName="lastName" placeholder="Lewis" />
     </div>
+    <div *ngIf="submitted && f.lastName.errors" class="text-danger">Last name is required.</div>
   </div>
 
   <div class="d-flex gap-2">
     <div class="d-flex flex-column gap-2" style="width: 60%;">
       <label class="input-label-text">Email*</label>
       <div class="d-flex align-items-center rounded-2 border" style="padding: 0.725rem;">
-        <input type="email" class="input-box" formControlName="email" placeholder="john@example.com" />
+        <input required type="email" class="input-box" formControlName="email" placeholder="john@example.com" />
+      </div>
+      <div *ngIf="submitted && f.email.errors" class="text-danger">
+        <div *ngIf="f.email.errors.required">Email is required.</div>
+        <div *ngIf="f.email.errors.email">Enter a valid email.</div>
       </div>
     </div>
     <div class="d-flex flex-column gap-2" style="width: 40%;">
       <label class="input-label-text">Mobile*</label>
       <div class="d-flex align-items-center rounded-2 border" style="padding: 0.725rem;">
-        <input type="tel" class="input-box" formControlName="mobile" placeholder="+91 98453 50214" />
+        <input required type="tel" class="input-box" formControlName="mobile" placeholder="+91 98453 50214" />
       </div>
+      <div *ngIf="submitted && f.mobile.errors" class="text-danger">Mobile is required.</div>
     </div>
   </div>
 
-  <div class="d-flex gap-2 text-center">
-    <input class="border rounded-1 checkbox" type="checkbox" formControlName="terms" id="terms" />
-    <label class="check-label-text" for="terms">
-      By clicking submit you agree to our terms and privacy policy.
-    </label>
+  <div class="d-flex flex-column gap-2">
+    <div class="d-flex gap-2 text-center">
+      <input required class="border rounded-1 checkbox" type="checkbox" formControlName="terms" id="terms" />
+      <label class="check-label-text" for="terms">
+        By clicking submit you agree to our terms and privacy policy.
+      </label>
+    </div>
+    <div *ngIf="submitted && f.terms.errors" class="text-danger">You must agree to the terms.</div>
   </div>
-
-  <!-- <div class="mb-4">
-    <re-captcha 
-      formControlName="recaptcha"
-      siteKey="YOUR_SITE_KEY"
-      (resolved)="onCaptchaResolved($event)">
-    </re-captcha>
-  </div> -->
   <div class="text-end my-4">
-    <button class="btn-blue text-white" [disabled]="!contactForm.valid">Submit</button>
+    <button type="submit" class="btn-blue text-white">Submit</button>
   </div>
 </form>

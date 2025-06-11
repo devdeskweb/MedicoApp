@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -8,7 +8,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class ContactFormComponent {
   contactForm: FormGroup;
-  recaptchaToken: string | null = null;
+  submitted = false;
+  nextRedirectUrl = window.location.origin;
+
+  @ViewChild('hiddenForm') hiddenForm!: ElementRef<HTMLFormElement>; 
 
   constructor(private fb: FormBuilder) {
     this.contactForm = this.fb.group({
@@ -17,18 +20,17 @@ export class ContactFormComponent {
       email: ['', [Validators.required, Validators.email]],
       mobile: ['', Validators.required],
       terms: [false, Validators.requiredTrue],
-      recaptcha: [null, Validators.required]
     });
   }
 
-  onCaptchaResolved(token: string) {
-    this.recaptchaToken = token;
-    this.contactForm.patchValue({ recaptcha: token });
+  get f() {
+    return this.contactForm.controls;
   }
 
   onSubmit() {
-    if (this.contactForm.valid) {
-      console.log('Form submitted with:', this.contactForm.value);
+    this.submitted = true;
+    if (this.contactForm.invalid) {
+      return;
     }
   }
 }
