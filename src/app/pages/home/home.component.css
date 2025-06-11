@@ -1,0 +1,138 @@
+.home{
+  font-family: Poppins;
+}
+.home-image{
+  height: 60vh;
+  background-size: cover;
+  background-image: url(/assets/external/home-screen-1.png);
+}
+.home-img-content{
+  width: 40%;
+  padding-left: 3rem;
+}
+.home-img-text-1{
+  font-size: 44px;
+  font-weight: 600;
+}
+.font-24{
+  font-size: 24px;
+}
+.btn-blue{
+  font-size: 30px;
+  border-radius: 4px;
+  padding: 6px 12px;
+  background-color: rgba(0, 26, 93, 1);
+}
+
+.home-details {
+  background-color: rgba(228, 235, 239, 1);
+  height: 18vh;
+}
+   
+.home-text113 {
+  font-size: 60px;
+  font-weight: 500;
+}
+  
+.home-text114 {
+  margin-top: -1rem;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.home-about-us {
+  padding: 4rem;
+}
+
+.home-heading-text-1{
+  font-size: 44px;
+  font-weight: 600;
+}
+.bg-blue{
+  background-color: rgba(0, 26, 93, 1);
+}
+.text-color-blue{
+  color: rgba(0, 26, 93, 1);
+}
+.home-heading-text-2{
+  font-size: 38px;
+  font-weight: 600;
+}
+.font-25{
+  font-size: 25px;
+}
+.font-30{
+  font-size: 30px;
+}
+.font-20{
+  font-size: 20px;
+}
+.home-content-text-1{
+  font-size: 26px;
+  color: rgba(117, 116, 116, 1);
+  font-weight: 500;
+
+}
+.text-color-pink{
+  color: rgba(238, 48, 145, 1);
+}
+
+.w-80{
+  width: 80;
+}
+.doctor-img{
+  background-size: cover;
+  background-image: url(/assets/external/doctor-2.png);
+}
+.shade-img{
+  background-size: cover;
+  background-image: url(/assets/external/shade-1.png);
+}
+.testimonials{
+  font-size: 60px;
+  font-style: Bold;
+  font-weight: 700;
+}
+.testimonials-details{
+  width: 90%;
+  background-color: #f7f7f7;
+  font-size: 30px;
+  font-style: Bold;
+  font-weight: 500;
+}
+.testimonials-text2, .testimonials-text{
+  font-size: 25px;
+  font-style: Bold;
+  font-weight: 500;
+}
+.btn-pink{
+    font-size: 26px;
+    padding: 6px 10px;
+    background-color: rgba(238, 48, 145, 1);
+}
+
+.btn-pink-2{
+  font-size: 30px;
+  padding: 4px 16px;
+  border-radius: 8px;
+  background-color: #ee3091;
+}
+.img-1{
+  height: 60vh;
+  background-size: cover;
+  background-image: url(/assets/external/img-1.png);
+}
+.img-2{
+  height: 60vh;
+  background-size: cover;
+  background-image: url(/assets/external/img-2.png);
+}
+.img-3{
+  height: 60vh;
+  background-size: cover;
+  background-image: url(/assets/external/img-3.png);
+}
+.home-heading-text-4{
+  font-size: 60px;
+  font-weight: 600;
+}  

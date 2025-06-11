@@ -1,0 +1,31 @@
+.form-head{
+    font-family: Poppins;
+}
+.input-box{
+    border: none !important;
+    outline: none !important;
+    flex-grow: 1;
+}
+.input-label-text{
+    color: rgba(0, 26, 93, 1);
+    font-size: 20px;
+}
+.btn-blue{
+    font-size: 30px;
+    border-radius: 4px;
+    padding: 6px 20px;
+    background-color: #3359a7;
+    font-weight: 400;
+}
+.checkbox{
+    appearance: none;
+    width: 22px;
+    height: 22px;
+}
+.checkbox:checked{
+    appearance: auto;
+}
+.check-label-text{
+    color: rgba(0, 26, 93, 1);
+    font-size: 15px;
+}

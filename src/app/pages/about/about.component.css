@@ -1,0 +1,64 @@
+.about{
+    font-family: Poppins;
+}
+
+.about-image{
+    height: 50vh;
+    background-size: cover;
+    background-color: #00149875;
+    background-image: url(/assets/external/about-img.png);
+}
+
+.font-80{
+    font-size: 80px;
+}
+
+.about-heading-text-1{
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.text-color-pink {
+    color: rgba(238, 48, 145, 1)
+}
+
+.text-color-blue {
+    color: rgba(0, 26, 93, 1);
+}
+
+.bg-pink{
+    background-color: rgba(238, 48, 145, 1);
+}
+
+.font-24{
+    font-size: 24px;
+}
+
+.details{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dr-name{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dr-details{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.desc-font{
+    background-color: #e8eaef;
+    color: #424141;
+    font-size: 24px;
+    padding: 50px;
+}
+
+.btn-blue{
+    font-size: 30px;
+    border-radius: 4px;
+    padding: 6px 12px;
+    background-color: rgba(0, 26, 93, 1);
+}

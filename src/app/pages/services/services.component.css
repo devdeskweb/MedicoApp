@@ -1,0 +1,39 @@
+.service{
+    font-family: Poppins;
+}
+.service-image{
+    height: 50vh;
+    background-size: cover;
+    background-color: #00149875;
+    background-image: url(/assets/external/services-screen.png);
+}
+.font-86{
+    font-size: 86px;
+}
+
+.service-heading-text-1{
+    font-size: 44px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.text-color-pink {
+    color: rgba(238, 48, 145, 1)
+}
+.text-color-blue {
+    color: rgba(0, 26, 93, 1);
+}
+.bg-pink{
+    background-color: rgba(238, 48, 145, 1);
+}
+
+.btn-blue{
+    font-size: 26px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background-color: rgba(0, 26, 93, 1);
+}
+
+.font-20{
+    font-size: 20px;
+}

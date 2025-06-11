@@ -1,0 +1,35 @@
+.gallery{
+    font-family: Poppins;
+}
+.gallery-image{
+    height: 50vh;
+    background-size: cover;
+    background-color: #00149875;
+    background-image: url(/assets/external/gallery-screen.png);
+}
+.font-70{
+    font-size: 70px;
+}
+
+.gallery-heading-text-1{
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.text-color-pink {
+    color: rgba(238, 48, 145, 1)
+}
+.text-color-blue {
+    color: rgba(0, 26, 93, 1);
+}
+
+.w-80{
+    width: 80%;
+}
+
+.btn-blue{
+    font-size: 26px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background-color: rgba(0, 26, 93, 1);
+}

@@ -1,0 +1,49 @@
+.nav-head{
+  font-family: Poppins;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.active-nav {
+  font-weight: 600;
+  border-bottom: 4px solid black;
+}
+   
+.w-85 {
+  width: 85%;
+}
+   
+.nav-bar-top-features {
+  gap: 50px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.nav-bar-title {
+  color: rgba(11, 24, 109, 1);
+  font-size: 30px;
+  font-weight: 600;
+}
+   
+.nav-bar-contact-email {
+  padding: 18px;
+  background-color: rgba(0, 20, 152, 1);
+}
+   
+.nav-bar-text-contact-email {
+  font-size: 28px;
+  font-weight: 600;
+}
+   
+.nav-bar-contact-me {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: rgba(17, 40, 75, 1);
+}
+   
+.nav-bar-text-contact {
+  font-size: 16px;
+  font-weight: 500;
+}

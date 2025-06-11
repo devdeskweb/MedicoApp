@@ -1,0 +1,21 @@
+<div class="nav-head d-flex flex-column">
+    <div class="d-flex justify-content-between p-4 m-1 mx-4">
+        <div class="w-85 d-flex justify-content-between align-items-center">
+            <div routerLink="/home" class="nav-bar-title cursor-pointer">Dr. Sachin Subbaraya</div>
+            <div class="nav-bar-top-features d-flex">
+                <span routerLink="/home" routerLinkActive="active-nav" [routerLinkActiveOptions]="{ exact: true }" class="pb-1 cursor-pointer">Home</span>
+                <span routerLink="/about" routerLinkActive="active-nav" [routerLinkActiveOptions]="{ exact: true }" class="pb-2 cursor-pointer">About me</span>
+                <span routerLink="/services" routerLinkActive="active-nav" [routerLinkActiveOptions]="{ exact: true }" class="pb-2 cursor-pointer">Services</span>
+                <span routerLink="/gallery" routerLinkActive="active-nav" [routerLinkActiveOptions]="{ exact: true }" class="pb-2 cursor-pointer">Gallery</span>
+            </div>
+        </div>
+        <div class="nav-bar-contact-me d-flex">
+            <button routerLink="/contact" routerLinkActive="active-nav" [routerLinkActiveOptions]="{ exact: true }" class="nav-bar-text-contact text-white">Contact Me</button>
+        </div>
+    </div>
+    <div class="nav-bar-contact-email d-flex justify-content-center align-items-center">
+        <span class="nav-bar-text-contact-email text-white">
+            Contact : <span>+91 +91 99013 04020</span> | Email : <span>Dr. Sachin Subbaraya@gmail.com</span>
+        </span>
+    </div>
+</div>

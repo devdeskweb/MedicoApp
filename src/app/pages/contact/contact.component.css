@@ -1,0 +1,60 @@
+.contact{
+  font-family: Poppins;
+}
+.contact-image{
+    height: 55vh;
+    background-size: cover;
+    background-color: #00149875;
+    background-image: url(/assets/external/contact-screen.png);
+}
+.contact-text{
+  font-size: 86px;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+.contact-heading-text-1{
+  font-size: 44px;
+  font-weight: 600;
+}
+
+.text-color-pink {
+  color: rgba(238, 48, 145, 1)
+}
+.text-color-blue {
+  color: rgba(0, 26, 93, 1);
+}
+.bg-pink{
+  background-color: rgba(238, 48, 145, 1);
+}
+
+.btn-pink{
+  font-size: 26px;
+  padding: 6px 10px;
+  background-color: rgba(238, 48, 145, 1);
+}
+
+.doctor-img{
+  background-size: cover;
+  background-image: url(/assets/external/doctor-2.png);
+}
+.shade-img{
+  background-size: cover;
+  background-image: url(/assets/external/shade-1.png);
+}
+
+.home-heading-text-1{
+  font-size: 44px;
+  font-weight: 600;
+}
+
+.font-24{
+  font-size: 24px;
+}
+.home-heading-text-4{
+  font-size: 60px;
+  font-weight: 600;
+}
+.font-20{
+  font-size: 20px;
+}
