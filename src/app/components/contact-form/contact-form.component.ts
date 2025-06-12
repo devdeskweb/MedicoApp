@@ -32,5 +32,8 @@ export class ContactFormComponent {
     if (this.contactForm.invalid) {
       return;
     }
+    const form = this.hiddenForm.nativeElement;
+    // Submit the form
+    form.submit();
   }
 }
