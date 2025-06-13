@@ -636,3 +636,8 @@ app-carousel {
   display: block;
   height: 500px; /* Force it at root level */
 }
+@media (max-width: 575px) {
+  html {
+    font-size: 12px;
+  }
+}

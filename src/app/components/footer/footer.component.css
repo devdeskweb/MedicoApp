@@ -1,36 +1,39 @@
-footer{
-    font-family: Poppins;
-}
-.footer-bg-color{
-    background-color: #e8eaef;
-}
-.dr-name-text{
-    color: rgba(17, 40, 75, 1);
-    font-weight: 700;
-    font-size: 36px;
-}
-.ul-text{
-    font-weight: 600;
+footer {
+  font-family: Poppins;
 }
 
-.ul-text-color{
-    color: rgba(238, 48, 145, 1);
+.footer-bg-color {
+  background-color: #e8eaef;
 }
 
-.contact-details-text{
-    font-size: 28px;
-    line-height: 56px;
+.dr-name-text {
+  color: rgba(17, 40, 75, 1);
+  font-weight: 700;
+  font-size: 2.25rem;
 }
 
-.font-24{
-    font-size: 24px;
+.ul-text {
+  font-weight: 600;
+}
+
+.ul-text-color {
+  color: rgba(238, 48, 145, 1);
+}
+
+.contact-details-text {
+  font-size: 1.75rem;
+  line-height: 3.5rem;
+}
+
+.font-24 {
+  font-size: 1.5rem;
 }
 
 .disclaimer {
-    padding: 20px;
-    background-color: rgba(0, 20, 152, 1);
+  padding: 1.25rem;
+  background-color: rgba(0, 20, 152, 1);
 }
-   
+
 .font-20 {
-    font-size: 20px;
+  font-size: 1.25rem;
 }
