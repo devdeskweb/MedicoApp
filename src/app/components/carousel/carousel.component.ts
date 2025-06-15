@@ -1,41 +1,63 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { firstValueFrom } from 'rxjs';
+import { AppointmentModalComponent } from '../appointment-modal/appointment-modal.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.css']
+  styleUrls: ['./carousel.component.css'],
 })
-export class CarouselComponent implements OnInit {
+export class CarouselComponent implements OnInit, OnDestroy {
 
+  constructor(private dialog: MatDialog) { }
+  
   images = [
     {
-      src: 'assets/home-screen-1.png',
-      heading: 'Excellence in General & Gastrointestinal Surgery',
-      subHeading: 'Providing advanced laparoscopic and laser treatments with precision and care.'
+      src: 'assets/external/home-screen-1.png',
+      title: 'Image One',
+      description: 'Description for image one',
     },
     {
-      src: 'assets/home-screen-1.png',
-      heading: 'Pioneers in Minimally Invasive Surgery',
-      subHeading: 'Delivering safe and effective procedures with shorter recovery time.'
+      src: 'assets/external/home-screen-2.png',
+      title: 'Image Two',
+      description: 'Description for image two',
     },
     {
-      src: 'assets/home-screen-1.png',
-      heading: 'State-of-the-art Gastroenterology',
-      subHeading: 'Comprehensive care for all digestive health issues with top expertise.'
-    }
+      src: 'assets/external/about-img.png',
+      title: 'Image Three',
+      description: 'Description for image three',
+    },
   ];
 
   currentIndex = 0;
+  intervalId: any;
 
-  ngOnInit(): void {
-    setInterval(() => this.nextSlide(), 5000);
+  ngOnInit() {
+    this.startAutoSlide();
+  }
+
+  ngOnDestroy() {
+    clearInterval(this.intervalId);
+  }
+
+  startAutoSlide() {
+    this.intervalId = setInterval(() => {
+      this.nextSlide();
+    }, 3000);
+  }
+
+  goToSlide(index: number) {
+    this.currentIndex = index;
   }
 
   nextSlide() {
     this.currentIndex = (this.currentIndex + 1) % this.images.length;
   }
 
-  setSlide(index: number) {
-    this.currentIndex = index;
+  async onBookAnAppointmentBtnClick(){
+    const result = await firstValueFrom(
+      this.dialog.open(AppointmentModalComponent).afterClosed()
+    );
   }
 }

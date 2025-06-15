@@ -1,21 +1,5 @@
 <div class="home d-flex flex-column w-100">
-  <!-- <app-carousel-slider></app-carousel-slider> -->
-  <!-- <app-carousel></app-carousel> -->
-  <div class="home-image d-flex align-items-center w-100 p-4">
-    <div class="d-flex flex-column gap-2 home-img-content">
-      <div class="home-img-text-1">
-        Excellence in General & <br />
-        Gastrointestinal Surgery
-      </div>
-      <div class="bg-black" style="width: 90%; height: 3px;"></div>
-      <div class="font-24">Providing advanced laparoscopic and laser treatments with precision and
-        care.
-      </div>
-      <div class="my-4">
-        <button class="btn-blue text-white" (click)="onBookAnAppointmentBtnClick()">Book an Appointment</button>
-      </div>
-    </div>
-  </div>
+  <app-carousel></app-carousel>
   <div class="home-details w-100 d-flex">
     <div class="d-flex justify-content-evenly" style="width: 90%;">
       <div class="d-flex flex-column text-center">
@@ -31,10 +15,9 @@
         <span class="home-text114">Years of experience</span>
       </div>
     </div>
-    <img
-      src="/assets/external/whatsappiconpng1311171-wv-300w.png"
-      alt="whatsappicon"
-    />
+    <a [href]="'https://wa.me/' + mobile" class="text-black text-decoration-none whatsapp-icon" target="_blank">
+      <img src="assets/external/whatsappicon.png" width="200" />
+    </a>
   </div>
   <div class="home-about-us d-flex flex-column justify-content-center gap-4">
     <div class="d-flex flex-column gap-2 justify-content-center align-items-center">

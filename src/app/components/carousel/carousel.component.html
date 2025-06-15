@@ -1,26 +1,71 @@
-<div class="carousel-container">
-  <div class="carousel-slide" [style.transform]="'translateX(-' + (currentIndex * 100) + '%)'">
-    <div
-      *ngFor="let img of images"
-      class="carousel-item"
-      [style.backgroundImage]="'url(' + img.src + ')'"
-    >
-      <div class="text-container text-white">
-        <h2 class="fw-bold">{{ img.heading }}</h2>
-        <div class="line my-2"></div>
-        <p>{{ img.subHeading }}</p>
-        <button class="btn btn-light mt-2">Book an Appointment</button>
+<div class="home position-relative overflow-hidden">
+  <div class="d-flex transition" [style.width.%]="images.length * 100" [style.transform]="'translateX(-' + currentIndex * (100 / images.length) + '%)'"
+    style="transition: transform 0.5s ease-in-out; height: 60vh;"
+  >
+    <div class="flex-shrink-0" [style.width.%]="100/3">
+      <div class="home-image d-flex justify-content-evenly align-items-center w-100 h-100 p-4" style="background-image: url(/assets/external/home-screen-3.png);">
+        <div class="d-flex flex-column gap-2">
+          <div class="dr-name-text">Dr. Sachin Subbaraya</div>
+          <div class="bg-black" style="width: 65%; height: 3px;"></div>
+          <ul class="list-unstyled ul-text">
+            <li><span class="ul-text-color">• Designation:</span> Associate Consultant</li>
+            <li><span class="ul-text-color">• Department:</span> General and Gastrointestinal Surgery</li>
+            <li>
+              <span class="ul-text-color">• Qualification:</span>
+              MBBS, MS (General Surgery), FIAGES, FMAS,<br />
+              Laser Proctology & EVLT Specialist
+            </li>
+          </ul>
+          <div class="my-4">
+            <button class="btn-blue text-white" (click)="onBookAnAppointmentBtnClick()">Book an Appointment</button>
+          </div>
+        </div>
+        <img src="assets/external/dr-sachin-sm.png" width="350"/>
+      </div>
+    </div>
+    <div class="flex-shrink-0" [style.width.%]="100/3">
+      <div class="home-image d-flex align-items-center w-100 h-100 p-4" style="background-image: url(/assets/external/home-screen-2.png);">
+        <div class="d-flex flex-column gap-2 home-img-content">
+          <div class="home-img-text-1">
+            Excellence in General & <br />
+            Gastrointestinal Surgery
+          </div>
+          <div class="bg-black" style="width: 90%; height: 3px;"></div>
+          <div class="font-24">Providing advanced laparoscopic and laser treatments with precision and
+            care.
+          </div>
+          <div class="my-4">
+            <button class="btn-blue text-white" (click)="onBookAnAppointmentBtnClick()">Book an Appointment</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-shrink-0" [style.width.%]="100/3">
+      <div class="home-image d-flex align-items-center w-100 h-100 p-4" style="background-image: url(/assets/external/home-screen-1.png);">
+        <div class="d-flex flex-column gap-2 home-img-content">
+          <div class="home-img-text-1">
+            Excellence in General & <br />
+            Gastrointestinal Surgery
+          </div>
+          <div class="bg-black" style="width: 90%; height: 3px;"></div>
+          <div class="font-24">Providing advanced laparoscopic and laser treatments with precision and
+            care.
+          </div>
+          <div class="my-4">
+            <button class="btn-blue text-white" (click)="onBookAnAppointmentBtnClick()">Book an Appointment</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- Dots -->
-  <div class="dots-container position-absolute bottom-0 start-50 translate-middle-x mb-3 d-flex">
+  <div class="dot-box d-flex justify-content-center gap-2 position-absolute w-100">
     <span
-      *ngFor="let img of images; let i = index"
-      class="dot"
-      [class.active]="i === currentIndex"
-      (click)="setSlide(i)"
+      *ngFor="let image of images; let idx = index"
+      (click)="goToSlide(idx)"
+      class="rounded-circle"
+      [ngClass]="{ 'bg-primary': currentIndex === idx, 'bg-secondary': currentIndex !== idx }"
+      style="width: 12px; height: 12px; cursor: pointer;"
     ></span>
   </div>
 </div>
