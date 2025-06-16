@@ -1,26 +1,26 @@
-.home{
+.home {
   font-family: Poppins;
 }
-.home-image{
+.home-image {
   height: 60vh;
   background-size: cover;
   background-image: url(/assets/external/home-screen-1.png);
 }
-.home-img-content{
+.home-img-content {
   width: 40%;
   padding-left: 3rem;
 }
-.home-img-text-1{
-  font-size: 44px;
+.home-img-text-1 {
+  font-size: 2.75rem;
   font-weight: 600;
 }
-.font-24{
-  font-size: 24px;
+.font-24 {
+  font-size: 1.5rem;
 }
-.btn-blue{
-  font-size: 30px;
-  border-radius: 4px;
-  padding: 6px 12px;
+.btn-blue {
+  font-size: 1.875rem;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
   background-color: rgba(0, 26, 93, 1);
 }
 
@@ -30,13 +30,13 @@
 }
    
 .home-text113 {
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 500;
 }
   
 .home-text114 {
   margin-top: -1rem;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 500;
 }
 
@@ -44,95 +44,109 @@
   padding: 4rem;
 }
 
-.home-heading-text-1{
-  font-size: 44px;
+.home-heading-text-1 {
+  font-size: 2.75rem;
   font-weight: 600;
 }
-.bg-blue{
+.bg-blue {
   background-color: rgba(0, 26, 93, 1);
 }
-.text-color-blue{
+.text-color-blue {
   color: rgba(0, 26, 93, 1);
 }
-.home-heading-text-2{
-  font-size: 38px;
+.home-heading-text-2 {
+  font-size: 2.375rem;
   font-weight: 600;
 }
-.font-25{
-  font-size: 25px;
+.font-25 {
+  font-size: 1.5625rem;
 }
-.font-30{
-  font-size: 30px;
+.font-30 {
+  font-size: 1.875rem;
 }
-.font-20{
-  font-size: 20px;
+.font-20 {
+  font-size: 1.25rem;
 }
-.home-content-text-1{
-  font-size: 26px;
+.home-content-text-1 {
+  font-size: 1.625rem;
   color: rgba(117, 116, 116, 1);
   font-weight: 500;
 
 }
-.text-color-pink{
+.text-color-pink {
   color: rgba(238, 48, 145, 1);
 }
 
-.w-80{
+.w-80 {
   width: 80;
 }
-.doctor-img{
+.doctor-img {
   background-size: cover;
   background-image: url(/assets/external/doctor-2.png);
 }
-.shade-img{
+.shade-img {
   background-size: cover;
   background-image: url(/assets/external/shade-1.png);
 }
-.testimonials{
-  font-size: 60px;
+.testimonials {
+  font-size: 3.75rem;
   font-style: Bold;
   font-weight: 700;
 }
-.testimonials-details{
+.testimonials-details {
   width: 90%;
   background-color: #f7f7f7;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-style: Bold;
   font-weight: 500;
 }
-.testimonials-text2, .testimonials-text{
-  font-size: 25px;
+.testimonials-text2,
+.testimonials-text {
+  font-size: 1.5625rem;
   font-style: Bold;
   font-weight: 500;
 }
-.btn-pink{
-    font-size: 26px;
-    padding: 6px 10px;
-    background-color: rgba(238, 48, 145, 1);
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
-
-.btn-pink-2{
-  font-size: 30px;
-  padding: 4px 16px;
-  border-radius: 8px;
+.btn-pink {
+  font-size: 1.625rem;
+  padding: 0.375rem 0.625rem;
+  background-color: rgba(238, 48, 145, 1);
+}
+.btn-pink-2 {
+  font-size: 1.875rem;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
   background-color: #ee3091;
 }
-.img-1{
+.appointment-banner {
   height: 60vh;
   background-size: cover;
-  background-image: url(/assets/external/img-1.png);
+  background-position: center;
+  background-image: url(/assets/external/img-1.png),
+    url(/assets/external/img-2.png), url(/assets/external/img-3.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.img-2{
-  height: 60vh;
-  background-size: cover;
-  background-image: url(/assets/external/img-2.png);
-}
-.img-3{
-  height: 60vh;
-  background-size: cover;
-  background-image: url(/assets/external/img-3.png);
-}
-.home-heading-text-4{
-  font-size: 60px;
+
+.home-heading-text-4 {
+  font-size: 3.75rem;
   font-weight: 600;
-}  
+}
+@media (max-width: 768px) {
+  .home-img-content {
+    width: 100%;
+  }
+  .appointment-banner {
+    height: auto;
+    padding: 3rem 1rem;
+  }
+
+  .home-heading-text-4 {
+    font-size: 2rem;
+  }
+}
