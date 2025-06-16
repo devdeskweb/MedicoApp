@@ -34,13 +34,26 @@
   background-color: rgba(238, 48, 145, 1);
 }
 
-.doctor-img{
+.doctor-img {
   background-size: cover;
   background-image: url(/assets/external/doctor-2.png);
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex: 1;
 }
-.shade-img{
+
+.shade-img {
   background-size: cover;
   background-image: url(/assets/external/shade-1.png);
+  background-position: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2rem;
 }
 
 .home-heading-text-1{
@@ -57,4 +70,22 @@
 }
 .font-20{
   font-size: 20px;
+}
+@media (max-width: 768px) {
+  .doctor-img {
+    height: 40vh;
+  }
+
+  .shade-img {
+    padding: 1rem;
+  }
+
+  .home-heading-text-4 {
+    font-size: 1.75rem;
+  }
+
+  .btn-pink {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+  }
 }
