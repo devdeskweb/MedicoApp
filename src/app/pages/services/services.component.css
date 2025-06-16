@@ -1,39 +1,39 @@
-.service{
-    font-family: Poppins;
+.service {
+  font-family: Poppins;
 }
-.service-image{
+.service-image {
     height: 50vh;
     background-size: cover;
     background-color: #00149875;
     background-image: url(/assets/external/services-screen.png);
 }
-.font-86{
-    font-size: 86px;
+.font-86 {
+  font-size: 5.375rem;
 }
 
-.service-heading-text-1{
-    font-size: 44px;
-    font-weight: 600;
-    text-align: center;
+.service-heading-text-1 {
+  font-size: 2.75rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 .text-color-pink {
-    color: rgba(238, 48, 145, 1)
+  color: rgba(238, 48, 145, 1);
 }
 .text-color-blue {
-    color: rgba(0, 26, 93, 1);
+  color: rgba(0, 26, 93, 1);
 }
 .bg-pink{
     background-color: rgba(238, 48, 145, 1);
 }
 
-.btn-blue{
-    font-size: 26px;
-    border-radius: 4px;
-    padding: 5px 10px;
-    background-color: rgba(0, 26, 93, 1);
+.btn-blue {
+  font-size: 1.625rem;
+  border-radius: 0.25rem;
+  padding: 0.3125rem 0.625rem;
+  background-color: rgba(0, 26, 93, 1);
 }
 
-.font-20{
-    font-size: 20px;
+.font-20 {
+  font-size: 1.25rem;
 }
