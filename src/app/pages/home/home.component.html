@@ -1,42 +1,25 @@
 <div class="home d-flex flex-column w-100">
   <app-carousel></app-carousel>
-  <div class="home-image d-flex align-items-center w-100 p-4">
-    <div class="d-flex flex-column gap-2 home-img-content">
-      <div class="home-img-text-1">
-        Excellence in General & <br />
-        Gastrointestinal Surgery
-      </div>
-      <div class="bg-black" style="width: 90%; height: 3px"></div>
-      <div class="font-24">
-        Providing advanced laparoscopic and laser treatments with precision and
-        care.
-      </div>
-      <div class="my-4">
-        <button
-          class="btn-blue text-white"
-          (click)="onBookAnAppointmentBtnClick()"
-        >
-          Book an Appointment
-        </button>
-      </div>
-    </div>
-  </div>
   <div class="home-details w-100 d-flex">
-    <div class="d-flex justify-content-evenly" style="width: 90%">
-      <div class="d-flex flex-column text-center">
-        <span class="home-text113">500+</span>
+    <div class="row w-100 text-center">
+      <div class="col-12 col-md-4 mb-3">
+        <span class="home-text113">500+</span><br />
         <span class="home-text114">Happy Patients</span>
       </div>
-      <div class="d-flex flex-column text-center">
+      <div class="col-12 col-md-4 mb-3">
         <span class="home-text113">100+</span>
         <span class="home-text114">Surgeries</span>
       </div>
-      <div class="d-flex flex-column text-center">
+      <div class="col-12 col-md-4 mb-3">
         <span class="home-text113">10+</span>
         <span class="home-text114">Years of experience</span>
       </div>
     </div>
-    <a [href]="'https://wa.me/' + mobile" class="text-black text-decoration-none whatsapp-icon m-3" target="_blank">
+    <a
+      [href]="'https://wa.me/' + mobile"
+      class="text-black text-decoration-none whatsapp-icon m-3"
+      target="_blank"
+    >
       <img src="assets/external/whatsappicon.png" width="100" />
     </a>
   </div>
@@ -79,7 +62,7 @@
         <img
           src="/assets/external/dr-sachin.png"
           alt="doctor"
-          class="w-100 w-md-25"
+          class="w-25 w-md-25"
         />
         <!-- width="30%" -->
       </div>
@@ -95,14 +78,12 @@
       </div>
       <div class="bg-blue" style="width: 50%; height: 4px"></div>
     </div>
-    <div class="d-flex w-100 w-md-75 flex-wrap flex-md-nowrap px-4 py-5 py-md-1 px-md-1">
-      <div
-        class="d-flex flex-column gap-4 justify-content-center align-items-center flex-fill"
-      >
+    <div class="row w-100 px-4 py-5">
+      <div class="col-12 col-md-4 mb-4 d-flex flex-column align-items-center">
         <img
           src="/assets/external/rectangle161276-zmz-600w.png"
           alt="Surgery 1"
-          width="68%"
+          class="img-fluid w-100 w-md-75"
         />
         <div class="font-25 text-center">
           <span class="font-30 text-color-pink fw-bold"
@@ -113,13 +94,11 @@
           Hernia Repair
         </div>
       </div>
-      <div
-        class="d-flex flex-column gap-4 justify-content-center align-items-center flex-fill"
-      >
+      <div class="col-12 col-md-4 mb-4 d-flex flex-column align-items-center">
         <img
           src="/assets/external/rectangle141276-usz-600w.png"
           alt="Surgery 2"
-          width="68%"
+          class="img-fluid w-100 w-md-75"
         />
         <div class="font-25 text-center">
           <span class="font-30 text-color-pink fw-bold"
@@ -130,13 +109,11 @@
           Hernia Repair
         </div>
       </div>
-      <div
-        class="d-flex flex-column gap-4 justify-content-center align-items-center flex-fill"
-      >
+      <div class="col-12 col-md-4 mb-4 d-flex flex-column align-items-center">
         <img
           src="/assets/external/rectangle151276-db0u-600w.png"
           alt="Surgery 3"
-          width="68%"
+          class="img-fluid w-75 w-md-75"
         />
         <div class="font-25 text-center">
           <span class="font-30 text-color-pink fw-bold">Laser Procedures </span>
@@ -166,27 +143,38 @@
     </div>
   </div>
 
-  <div class="d-flex w-80 justify-content-center m-4">
+  <div class="d-flex w-100 justify-content-center p-4">
     <div class="d-flex">
       <div class="d-flex flex-column gap-2">
-        <img src="/assets/external/home-img-1.png" alt="Image 1" width="76%" />
+        <img
+          src="/assets/external/home-img-1.png"
+          alt="Image 1"
+          class="w-100 pe-2"
+        />
         <div class="d-flex">
           <img
             src="/assets/external/home-img-2.png"
             alt="Image 2"
-            width="38%"
-            style="padding-right: 0.5rem"
+            class="w-50 pe-2"
           />
           <img
             src="/assets/external/home-img-3.png"
             alt="Image 3"
-            width="38%"
+            class="w-50 pe-2"
           />
         </div>
       </div>
       <div class="d-flex flex-column gap-2">
-        <img src="/assets/external/home-img-4.png" alt="Image 4" width="76%" />
-        <img src="/assets/external/home-img-5.png" alt="Image 5" width="76%" />
+        <img
+          src="/assets/external/home-img-4.png"
+          alt="Image 4"
+          class="w-100 pe-2"
+        />
+        <img
+          src="/assets/external/home-img-5.png"
+          alt="Image 5"
+          class="w-100 pe-2"
+        />
       </div>
     </div>
   </div>
@@ -213,7 +201,15 @@
       </div>
     </div>
   </div>
-  <div class="d-flex justify-content-between flex-column flex-md-row w-85 py-4">
+  <div class="row w-100 justify-content-center px-3 py-4">
+    <div class="col-12 col-md-6 mb-4">
+      <!-- doctor-img with overlay -->
+    </div>
+    <div class="col-12 col-md-6">
+      <!-- contact info + form -->
+    </div>
+  </div>
+  <!-- <div class="d-flex justify-content-between flex-column flex-md-row w-85 py-4">
     <div class="doctor-img d-flex">
       <div
         class="shade-img d-flex flex-column justify-content-end align-items-center p-4 pb-1 w-100"
@@ -250,6 +246,6 @@
       </div>
       <app-contact-form></app-contact-form>
     </div>
-  </div>
+  </div> -->
   <app-footer></app-footer>
 </div>

@@ -1,91 +1,109 @@
 <div class="about d-flex flex-column gap-2">
-  <a [href]="'https://wa.me/' + mobile" class="text-black text-decoration-none whatsapp-icon m-3" target="_blank">
+  <a
+    [href]="'https://wa.me/' + mobile"
+    class="text-black text-decoration-none whatsapp-icon m-3"
+    target="_blank"
+  >
     <img src="assets/external/whatsappicon.png" width="90" />
   </a>
   <div class="about-image d-flex align-items-center justify-content-center">
-    <span class="font-80 text-white fw-bold text-center">About Me</span>
+    <span class="font-70 text-white fw-bold text-center">About Me</span>
   </div>
   <!-- Heading -->
-  <div class="d-flex flex-column gap-1 align-items-center text-center px-3">
+  <div class="text-center px-3 mt-4">
     <div class="about-heading-text-1">
       Dedicated To Excellence In General <br />
       <span class="text-color-pink">& Gastrointestinal Surgery</span>
     </div>
-    <div class="bg-pink" style="width: 35%; height: 3px;"></div>
-    <div class="font-24 text-center">Minimizing Recovery Time And Enhancing Outcomes<br />Through Advanced Surgical Techniques.</div>
+    <div class="bg-pink mx-auto my-2" style="width: 35%; height: 3px"></div>
+    <div class="font-24">
+      Minimizing Recovery Time And Enhancing Outcomes <br />
+      Through Advanced Surgical Techniques.
+    </div>
   </div>
 
   <!-- Profile Section -->
-  <div class="d-flex flex-column flex-md-row gap-4 py-4 px-3">
-    <!-- Left Image Block -->
-    <div class="d-flex flex-column align-items-center text-center gap-4 w-100 w-md-50">
-      <img
-        src="/assets/external/rectangle111171-nqgg-700w.png"
-        alt="Dr. Sachin Subbaraya"
-        class="img-fluid w-75 w-md-50"
-      />
-      <div class="d-flex flex-column gap-1">
-        <div class="text-color-blue dr-name">Dr. Sachin Subbaraya</div>
-        <div class="text-muted dr-details">
-          Associate Consultant<br />General and Gastrointestinal Surgery
-        </div>
-      </div>
-    </div>
-
-    <!-- Right Info Block -->
-    <div class="d-flex flex-column gap-4 w-100 w-md-50 details">
-      <!-- Profile Info -->
-      <div class="d-flex flex-column gap-1">
-        <div class="text-color-pink">Professional Profile:</div>
-        <div class="text-color-blue">
-          Name: Dr. Sachin Subbaraya<br />
-          Designation: Associate Consultant<br />
-          Department: General and Gastrointestinal Surgery<br />
-          Qualification: MBBS, MS (General Surgery), FIAGES, FMAS, Laser
-          Proctology & EVLT Specialist
+  <div class="container py-5">
+    <div class="row g-4">
+      <!-- Left Image Block -->
+      <div
+        class="col-md-6 text-center d-flex flex-column align-items-center gap-3"
+      >
+        <img
+          src="/assets/external/rectangle111171-nqgg-700w.png"
+          alt="Dr. Sachin Subbaraya"
+          class="img-fluid w-75"
+        />
+        <div>
+          <div class="text-color-blue dr-name">Dr. Sachin Subbaraya</div>
+          <div class="text-muted dr-details">
+            Associate Consultant<br />General and Gastrointestinal Surgery
+          </div>
         </div>
       </div>
 
-      <!-- Education -->
-      <div class="d-flex flex-column gap-1">
-        <div class="text-color-pink">Education:</div>
-        <div class="text-color-blue">
-          MBBS: Completed At [University Name, If Available].<br />
-          MS (General Surgery): Prestigious MS Ramaiah Institute.
+      <!-- Right Info Block -->
+      <div class="col-md-6 d-flex flex-column gap-4 details">
+        <!-- Profile Info -->
+        <div>
+          <div class="text-color-pink fw-semibold">Professional Profile:</div>
+          <div class="text-color-blue">
+            Name: Dr. Sachin Subbaraya<br />
+            Designation: Associate Consultant<br />
+            Department: General and Gastrointestinal Surgery<br />
+            Qualification: MBBS, MS (General Surgery), FIAGES, FMAS, Laser
+            Proctology & EVLT Specialist
+          </div>
         </div>
-      </div>
 
-      <!-- Journey -->
-      <div class="d-flex flex-column gap-1">
-        <div class="text-color-pink">Professional Journey:</div>
-        <div class="text-color-blue">
-          Senior Resident: Apollo Hospital.<br />
-          Associate Consultant: Manipal Hospital.
+        <!-- Education -->
+        <div>
+          <div class="text-color-pink fw-semibold">Education:</div>
+          <div class="text-color-blue">
+            MBBS: Completed At [University Name, If Available].<br />
+            MS (General Surgery): Prestigious MS Ramaiah Institute.
+          </div>
         </div>
-      </div>
 
-      <!-- Expertise -->
-      <div class="d-flex flex-column gap-1">
-        <h6 class="text-color-pink mb-0">Expertise:</h6>
-        <p class="text-color-blue mb-0">
-          Minimal Access Laparoscopic Surgery For Abdominal Conditions.<br />
-          Laser Proctology And Varicose Vein Treatments.
-        </p>
+        <!-- Journey -->
+        <div>
+          <div class="text-color-pink fw-semibold">Professional Journey:</div>
+          <div class="text-color-blue">
+            Senior Resident: Apollo Hospital.<br />
+            Associate Consultant: Manipal Hospital.
+          </div>
+        </div>
+
+        <!-- Expertise -->
+        <div>
+          <div class="text-color-pink fw-semibold">Expertise:</div>
+          <div class="text-color-blue">
+            Minimal Access Laparoscopic Surgery For Abdominal Conditions.<br />
+            Laser Proctology And Varicose Vein Treatments.
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- About Description -->
-  <div class="desc-font d-flex flex-column align-items-center gap-2 px-3">
+  <div class="desc-font px-3 py-4 text-center">
     <p>
-      <strong>Dr. Sachin Subbaraya</strong> Is An Accomplished General And Laparoscopic Surgeon With Over A Decade Of Experience In Advanced Surgical Procedures.
-      After Earning His MBBS And MS In General Surgery From The Prestigious MS Ramaiah Institute, He Began His Career As A Senior Resident At Apollo Hospital.
-      Currently, He Serves As An Associate Consultant At Manipal Hospital, Where He Specializes In Minimally Invasive Surgical Techniques.
+      <strong>Dr. Sachin Subbaraya</strong> is an accomplished General and
+      Laparoscopic Surgeon with over a decade of experience in advanced surgical
+      procedures. After earning his MBBS and MS in General Surgery from the
+      prestigious MS Ramaiah Institute, he began his career as a Senior Resident
+      at Apollo Hospital. Currently, he serves as an Associate Consultant at
+      Manipal Hospital, where he specializes in minimally invasive surgical
+      techniques.
     </p>
     <p>
-      His Expertise Spans A Wide Range Of Abdominal Conditions, With A Focus On Laparoscopic Gallbladder Stone Removal, Appendectomy, Hernia Repair,
-      And Laser Proctology For Varicose Veins And Anorectal Diseases. With A Commitment To Using Cutting-Edge Technology,
-      Dr. Sachin Ensures Minimal Recovery Time, Reduced Scarring, And Superior Surgical Outcomes For His Patients.
+      His expertise spans a wide range of abdominal conditions, with a focus on
+      laparoscopic gallbladder stone removal, appendectomy, hernia repair, and
+      laser proctology for varicose veins and anorectal diseases. With a
+      commitment to using cutting-edge technology, Dr. Sachin ensures minimal
+      recovery time, reduced scarring, and superior surgical outcomes for his
+      patients.
     </p>
   </div>
 

@@ -1,98 +1,86 @@
-<footer
-  class="footer-bg-color border-top pt-4 d-flex flex-column gap-4 justify-content-center"
->
-  <div
-    class="d-flex flex-column flex-sm-row w-100 gap-4 m-0 justify-content-around"
-  >
-    <!-- Left Info Section -->
-    <div class="d-flex flex-column gap-4 p-4">
-      <div class="d-flex flex-column gap-2">
-        <div class="dr-name-text">Dr. Sachin Subbaraya</div>
-        <div class="bg-black" style="width: 85%; height: 3px"></div>
-        <ul class="list-unstyled ul-text">
-          <li>
-            <span class="ul-text-color">• Designation:</span> Associate
-            Consultant
-          </li>
-          <li>
-            <span class="ul-text-color">• Department:</span> General and
-            Gastrointestinal Surgery
-          </li>
-          <li>
-            <span class="ul-text-color">• Qualification:</span>
-            MBBS, MS (General Surgery), FIAGES, FMAS,<br />
-            Laser Proctology & EVLT Specialist
-          </li>
-        </ul>
-      </div>
-      <!-- Social Media Icons -->
-      <div class="d-flex align-items-center gap-4">
-        <a href="https://www.instagram.com/" target="_blank" title="Instagram">
-          <img
-            class="w-50 w-sm-75"
-            src="assets/external/social1332-emzk-200h.png"
-            alt="Instagram"
-          />
-        </a>
-        <a href="https://www.facebook.com/" target="_blank" title="Facebook">
-          <img
-            src="assets/external/facebook1332-6pb-200h.png"
-            alt="Facebook"
-            class="w-50 w-sm-75"
-          />
-        </a>
-        <a href="https://x.com/" target="_blank" title="X">
-          <img
-            src="assets/external/twitter11332-e52-200h.png"
-            alt="X"
-            class="w-50 w-sm-75"
-          />
-        </a>
-        <a href="https://in.linkedin.com/" target="_blank" title="LinkedIn">
-          <img
-            src="assets/external/linkedin31332-ptcn-200h.png"
-            alt="LinkedIn"
-            class="w-50 w-sm-75"
-          />
-        </a>
-        <a href="https://mail.google.com/" target="_blank" title="Gmail">
-          <img
-            src="assets/external/gmail1332-42z-200h.png"
-            alt="Gmail"
-            class="w-50 w-sm-75"
-          />
-        </a>
-      </div>
-    </div>
+<footer class="footer-bg-color border-top pt-4 position-relative">
+  <!-- Desktop View -->
+  <div class="d-none d-lg-block">
+    <div class="container">
+      <div class="row gap-4 justify-content-between">
+        <!-- Left Column -->
+        <div class="col-12 col-lg-6 d-flex flex-column gap-4 p-4">
+          <div class="d-flex flex-column gap-2">
+            <div class="dr-name-text">Dr. Sachin Subbaraya</div>
+            <div class="bg-black" style="width: 85%; height: 3px"></div>
+            <ul class="list-unstyled ul-text">
+              <li><span class="ul-text-color">• Designation:</span> Associate Consultant</li>
+              <li><span class="ul-text-color">• Department:</span> General and Gastrointestinal Surgery</li>
+              <li><span class="ul-text-color">• Qualification:</span> MBBS, MS (General Surgery), FIAGES, FMAS,<br/>Laser Proctology & EVLT Specialist</li>
+            </ul>
+          </div>
+          <!-- Social Icons -->
+          <div class="d-flex align-items-center gap-4 flex-wrap">
+            <a href="https://www.instagram.com/" target="_blank"><img class="w-50 w-sm-75" src="assets/external/social1332-emzk-200h.png" alt="Instagram" /></a>
+            <a href="https://www.facebook.com/" target="_blank"><img class="w-50 w-sm-75" src="assets/external/facebook1332-6pb-200h.png" alt="Facebook" /></a>
+            <a href="https://x.com/" target="_blank"><img class="w-50 w-sm-75" src="assets/external/twitter11332-e52-200h.png" alt="X" /></a>
+            <a href="https://in.linkedin.com/" target="_blank"><img class="w-50 w-sm-75" src="assets/external/linkedin31332-ptcn-200h.png" alt="LinkedIn" /></a>
+            <a href="https://mail.google.com/" target="_blank"><img class="w-50 w-sm-75" src="assets/external/gmail1332-42z-200h.png" alt="Gmail" /></a>
+          </div>
+        </div>
 
-    <!-- Right Section -->
-    <div class="d-flex gap-5 px-4">
-      <div class="d-flex flex-column gap-3 font-24 px-3 px-sm-3 px-md-5">
-        <a routerLink="/about" class="text-black text-decoration-none"
-          >About Me</a
-        >
-        <a routerLink="/services" class="text-black text-decoration-none"
-          >Services</a
-        >
-        <a routerLink="/gallery" class="text-black text-decoration-none"
-          >Gallery</a
-        >
-        <a routerLink="/contact" class="text-black text-decoration-none"
-          >Contact</a
-        >
-      </div>
-      <div class="contact-details-text d-flex flex-column gap-2">
-        <div class="fw-bold">Dr. Sachin Subbaraya</div>
-        <div><a [href]="'tel:' + mobile" class="text-black text-decoration-none">+91 99013 04020</a></div>
-        <div><a [href]="'mailto:' + email" class="text-black text-decoration-none">Dr. Sachin Subbaraya@Gmail.Com</a></div>
+        <!-- Right Column -->
+        <div class="col-12 col-lg-5 d-flex flex-column flex-lg-row justify-content-between gap-4 px-4">
+          <div class="d-flex flex-column gap-3 font-24">
+            <a routerLink="/about" class="text-black text-decoration-none">About Me</a>
+            <a routerLink="/services" class="text-black text-decoration-none">Services</a>
+            <a routerLink="/gallery" class="text-black text-decoration-none">Gallery</a>
+            <a routerLink="/contact" class="text-black text-decoration-none">Contact</a>
+          </div>
+          <div class="contact-details-text d-flex flex-column gap-2">
+            <div class="fw-bold">Dr. Sachin Subbaraya</div>
+            <div><a [href]="'tel:' + mobile" class="text-black text-decoration-none">+91 99013 04020</a></div>
+            <div><a  [href]="'mailto:' + email" class="text-black text-decoration-none">Dr.SachinSubbaraya@Gmail.Com</a></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <!-- Bottom Bar -->
-  <div class="disclaimer d-flex justify-content-center align-items-center m-0">
+
+  <!-- Mobile View -->
+  <div class="d-block d-lg-none px-3">
+    <div class="dr-name-text pt-3">Dr. Sachin Subbaraya</div>
+    <div class="bg-black my-2" style="width: 100%; height: 2px;"></div>
+    <ul class="list-unstyled ul-text">
+      <li><span class="ul-text-color">• Designation:</span> Associate Consultant</li>
+      <li><span class="ul-text-color">• Department:</span> General and Gastrointestinal Surgery</li>
+      <li><span class="ul-text-color">• Qualification:</span> MBBS, MS (General Surgery), FIAGES, FMAS,<br>Laser Proctology & EVLT Specialist</li>
+    </ul>
+
+    <!-- Social Icons -->
+    <div class="d-flex flex-column gap-3 py-2 position-absolute social-icon position-lg-relative">
+      <a href="https://www.instagram.com/" target="_blank"><img src="assets/external/social1332-emzk-200h.png" width="40" alt="Instagram"></a>
+      <a href="https://www.facebook.com/" target="_blank"><img src="assets/external/facebook1332-6pb-200h.png" width="40" alt="Facebook"></a>
+      <a href="https://x.com/" target="_blank"><img src="assets/external/twitter11332-e52-200h.png" width="40" alt="X"></a>
+      <a href="https://in.linkedin.com/" target="_blank"><img src="assets/external/linkedin31332-ptcn-200h.png" width="40" alt="LinkedIn"></a>
+      <a href="https://mail.google.com/" target="_blank"><img src="assets/external/gmail1332-42z-200h.png" width="40" alt="Gmail"></a>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="d-flex flex-column gap-2 pt-3 font-24">
+      <a routerLink="/about" class="text-dark text-decoration-none">About Me</a>
+      <a routerLink="/services" class="text-dark text-decoration-none">Services</a>
+      <a routerLink="/gallery" class="text-dark text-decoration-none">Gallery</a>
+      <a routerLink="/contact" class="text-dark text-decoration-none">Contact</a>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-details-text d-flex flex-column gap-1 pt-3">
+      <div class="fw-bold">Dr. Sachin Subbaraya</div>
+      <a href="tel:+919901304020" class="text-dark text-decoration-none">+91 99013 04020</a>
+      <a href="mailto:Dr.SachinSubbaraya@Gmail.com" class="text-dark text-decoration-none">Dr.SachinSubbaraya@Gmail.Com</a>
+    </div>
+  </div>
+
+  <!-- Disclaimer -->
+  <div class="disclaimer text-center mt-4">
     <span class="font-20 text-white">
-      The Information Provided On This Website Is For Educational Purposes Only.
-      Consult Directly For Professional Medical Advice.
+      The Information Provided On This Website Is For Educational Purposes Only. Consult Directly For Professional Medical Advice.
     </span>
   </div>
 </footer>

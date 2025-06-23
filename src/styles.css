@@ -632,12 +632,8 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-app-carousel {
-  display: block;
-  height: 500px; /* Force it at root level */
-}
 @media (max-width: 575px) {
   html {
-    font-size: 12px;
+    font-size: 8px;
   }
 }
