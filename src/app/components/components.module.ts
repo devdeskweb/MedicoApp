@@ -11,7 +11,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 @NgModule({
   declarations: [NavBarComponent, ContactFormComponent, FooterComponent, AppointmentModalComponent, CarouselComponent],
   imports: [CommonModule, RouterModule, ReactiveFormsModule],
-  exports: [NavBarComponent, ContactFormComponent, FooterComponent],
+  exports: [NavBarComponent, ContactFormComponent, FooterComponent, CarouselComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class ComponentsModule {}

@@ -1,6 +1,5 @@
 <div class="home d-flex flex-column w-100">
-  <!-- <app-carousel-slider></app-carousel-slider> -->
-  <!-- <app-carousel></app-carousel> -->
+  <app-carousel></app-carousel>
   <div class="home-image d-flex align-items-center w-100 p-4">
     <div class="d-flex flex-column gap-2 home-img-content">
       <div class="home-img-text-1">
@@ -37,11 +36,9 @@
         <span class="home-text114">Years of experience</span>
       </div>
     </div>
-    <img
-      class="d-none"
-      src="/assets/external/whatsappiconpng1311171-wv-300w.png"
-      alt="whatsappicon"
-    />
+    <a [href]="'https://wa.me/' + mobile" class="text-black text-decoration-none whatsapp-icon m-3" target="_blank">
+      <img src="assets/external/whatsappicon.png" width="100" />
+    </a>
   </div>
   <div
     class="px-4 py-5 py-md-4 px-md-5 home-about-us d-flex flex-column justify-content-center gap-4"
@@ -216,7 +213,7 @@
       </div>
     </div>
   </div>
-  <div class="d-flex flex-column flex-md-row w-100 gap-5 py-4">
+  <div class="d-flex justify-content-between flex-column flex-md-row w-85 py-4">
     <div class="doctor-img d-flex">
       <div
         class="shade-img d-flex flex-column justify-content-end align-items-center p-4 pb-1 w-100"

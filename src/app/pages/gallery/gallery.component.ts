@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { Title } from '@angular/platform-browser';
 import { firstValueFrom } from 'rxjs';
 import { AppointmentModalComponent } from 'src/app/components/appointment-modal/appointment-modal.component';
+import { AppConstants } from 'src/app/constants/app-constants';
 
 @Component({
   selector: 'app-gallery',
@@ -11,6 +12,8 @@ import { AppointmentModalComponent } from 'src/app/components/appointment-modal/
 })
 export class GalleryComponent implements OnInit {
 
+  mobile = AppConstants.Mobile;
+  
   constructor(private title: Title, private dialog: MatDialog) {
     this.title.setTitle('Gallery')
   }

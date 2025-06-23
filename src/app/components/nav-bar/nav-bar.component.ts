@@ -1,4 +1,5 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
+import { AppConstants } from 'src/app/constants/app-constants';
 
 @Component({
   selector: "app-nav-bar",
@@ -8,6 +9,8 @@ import { Component, OnInit } from "@angular/core";
 export class NavBarComponent implements OnInit {
   constructor() {}
 
+  mobile = AppConstants.Mobile;
+  email = AppConstants.Email;
   ngOnInit(): void {}
   showPopover = false;
 

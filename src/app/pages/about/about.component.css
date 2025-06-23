@@ -9,8 +9,8 @@
   background-image: url(/assets/external/about-img.png);
 }
 
-.font-80 {
-  font-size: 5rem;
+.font-70{
+    font-size: 70px;
 }
 
 .about-heading-text-1 {
@@ -61,4 +61,10 @@
   border-radius: 0.25rem;
   padding: 0.375rem 0.75rem;
   background-color: rgba(0, 26, 93, 1);
+}
+.whatsapp-icon{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
 }

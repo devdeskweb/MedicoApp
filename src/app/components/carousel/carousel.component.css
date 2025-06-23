@@ -1,56 +1,48 @@
-.carousel-container {
-  width: 100%;
-  height: 500px;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #eee;
+.object-fit-cover {
+  object-fit: cover;
 }
 
-.carousel-slide {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  transition: transform 0.8s ease-in-out;
+.transition {
+  transition: transform 0.5s ease-in-out;
 }
-
-.carousel-item {
-  min-width: 100%;
-  height: 100%;
+.home{
+  font-family: Poppins;
+}
+.home-image{
   background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 2rem;
+  /* background-image: url(/assets/external/home-screen-1.png); */
+}
+.home-img-content{
+  width: 40%;
+  padding-left: 3rem;
+}
+.home-img-text-1{
+  font-size: 44px;
+  font-weight: 600;
+}
+.font-24{
+  font-size: 24px;
+}
+.btn-blue{
+  font-size: 30px;
+  border-radius: 4px;
+  padding: 6px 12px;
+  background-color: rgba(0, 26, 93, 1);
 }
 
-.text-container {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
-  border-radius: 1rem;
-  max-width: 500px;
+.dot-box{
+  bottom: 1rem;
 }
 
-.line {
-  width: 90%;
-  height: 3px;
-  background-color: #fff;
+.dr-name-text{
+  color: rgba(17, 40, 75, 1);
+  font-weight: 700;
+  font-size: 50px;
 }
-
-.dots-container .dot {
-  height: 12px;
-  width: 12px;
-  margin: 0 5px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.ul-text{
+  font-weight: 600;
+  font-size: 30px;
 }
-
-.dots-container .dot.active {
-  background-color: #000;
+.ul-text-color{
+  color: rgba(238, 48, 145, 1);
 }

@@ -54,8 +54,8 @@
 .text-color-blue {
   color: rgba(0, 26, 93, 1);
 }
-.home-heading-text-2 {
-  font-size: 2.375rem;
+.home-heading-text-2{
+  font-size: 2rem;
   font-weight: 600;
 }
 .font-25 {
@@ -68,7 +68,7 @@
   font-size: 1.25rem;
 }
 .home-content-text-1 {
-  font-size: 1.625rem;
+  font-size: 1.5rem;
   color: rgba(117, 116, 116, 1);
   font-weight: 500;
 
@@ -77,8 +77,11 @@
   color: rgba(238, 48, 145, 1);
 }
 
-.w-80 {
-  width: 80;
+.w-80{
+  width: 80%;
+}
+.w-85{
+  width: 85%;
 }
 .doctor-img {
   background-size: cover;
@@ -131,6 +134,16 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.home-heading-text-4{
+  font-size: 45px;
+  font-weight: 600;
+}  
+.whatsapp-icon{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
 }
 
 .home-heading-text-4 {
