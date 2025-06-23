@@ -17,7 +17,7 @@
    
 .nav-bar-top-features {
   gap: 50px;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
 }
 
@@ -28,12 +28,12 @@
 }
    
 .nav-bar-contact-email {
-  padding: 18px;
+  padding: 14px;
   background-color: rgba(0, 20, 152, 1);
 }
    
 .nav-bar-text-contact-email {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 600;
 }
    

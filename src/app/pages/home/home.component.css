@@ -1,19 +1,6 @@
 .home{
   font-family: Poppins;
 }
-.home-image{
-  height: 60vh;
-  background-size: cover;
-  background-image: url(/assets/external/home-screen-1.png);
-}
-.home-img-content{
-  width: 40%;
-  padding-left: 3rem;
-}
-.home-img-text-1{
-  font-size: 44px;
-  font-weight: 600;
-}
 .font-24{
   font-size: 24px;
 }
@@ -45,7 +32,7 @@
 }
 
 .home-heading-text-1{
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 600;
 }
 .bg-blue{
@@ -55,7 +42,7 @@
   color: rgba(0, 26, 93, 1);
 }
 .home-heading-text-2{
-  font-size: 38px;
+  font-size: 2rem;
   font-weight: 600;
 }
 .font-25{
@@ -68,7 +55,7 @@
   font-size: 20px;
 }
 .home-content-text-1{
-  font-size: 26px;
+  font-size: 24px;
   color: rgba(117, 116, 116, 1);
   font-weight: 500;
 
@@ -78,7 +65,10 @@
 }
 
 .w-80{
-  width: 80;
+  width: 80%;
+}
+.w-85{
+  width: 85%;
 }
 .doctor-img{
   background-size: cover;
@@ -133,7 +123,7 @@
   background-image: url(/assets/external/img-3.png);
 }
 .home-heading-text-4{
-  font-size: 60px;
+  font-size: 45px;
   font-weight: 600;
 }  
 .whatsapp-icon{

@@ -8,13 +8,12 @@
     background-image: url(/assets/external/contact-screen.png);
 }
 .contact-text{
-  font-size: 86px;
-  font-family: Montserrat;
-  font-weight: 700;
+  font-size: 70px;
+  font-weight: 500;
 }
 
 .contact-heading-text-1{
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 600;
 }
 
@@ -44,7 +43,7 @@
 }
 
 .home-heading-text-1{
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 600;
 }
 

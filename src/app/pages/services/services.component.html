@@ -1,164 +1,212 @@
 <div class="service d-flex flex-column gap-2">
-    <a [href]="'https://wa.me/' + mobile" class="text-black text-decoration-none whatsapp-icon" target="_blank">
-        <img src="assets/external/whatsappicon.png" width="180" />
+    <a [href]="'https://wa.me/' + mobile" class="text-black text-decoration-none whatsapp-icon m-3" target="_blank">
+      <img src="assets/external/whatsappicon.png" width="90" />
     </a>
     <div class="service-image d-flex align-items-center justify-content-center">
-        <span class="font-86 text-white fw-bold">Services</span>
+      <span class="font-70 text-white fw-bold">Services</span>
     </div>
     <!-- Heading -->
     <div class="d-flex flex-column gap-1 align-items-center m-2">
-        <div class="service-heading-text-1">Expertise in Advanced And Minimal <br />
-            <span class="text-color-pink">Access Surgeries</span>
-        </div>
-        <div class="bg-pink" style="width: 25%; height: 4px;"></div>
+      <div class="service-heading-text-1">Expertise in Advanced And Minimal <br />
+          <span class="text-color-pink">Access Surgeries</span>
+      </div>
+      <div class="bg-pink" style="width: 25%; height: 4px;"></div>
     </div>
-    <div class="d-flex flex-column gap-4 m-4">
-        <div class="d-flex my-4 gap-2">
-            <div class="d-flex flex-column align-items-center gap-4">
-                <img src="assets/external/laparoscopic.png" alt="Laparoscopic" width="55%"/>
-                <div class="text-center my-2">
-                    <button class="btn-blue text-white" (click)="onBookAnAppointmentBtnClick()">Book an Appointment</button>
-                </div>
+    <div class="d-flex flex-column gap-4 m-4 align-items-center">
+      <div class="d-flex flex-column my-4 gap-2 align-items-center">
+        <div class="d-flex justify-content-between w-80">
+          <div class="d-flex flex-column gap-4 w-30">
+            <img src="assets/external/laparoscopic.png" alt="Laparoscopic"/>
+            <div class="text-center my-2">
+              <button class="btn-blue text-white" (click)="onBookAnAppointmentBtnClick()">Book an Appointment</button>
             </div>
-            <div class="d-flex flex-column gap-2">
-                <div class="text-color-pink h3 fw-bold">Laparoscopic Surgeries</div>
-                <div class="d-flex flex-column gap-1">
-                    <div class="text-color-pink h5">Gall Bladder Removal (Laparoscopic Cholecystectomy)</div>
-                    <ul class="font-20">
-                        <li>A Small Organ Under The Liver That Stores Bile.</li>
-                        <li>Surgery Is Commonly Done To Remove Gallstones And Ease Pain.</li>
-                        <li>Performed Using Keyhole Technique For Faster Recovery.</li>
-                        <li>Types: Open Or Laparoscopic (Preferred For Minimal Pain).</li>
-                    </ul>
-                    <div class="text-color-pink h5">Benefits:</div>
-                    <ul class="font-20">
-                        <li>Quick Recovery</li>
-                        <li>No Large Cuts</li>
-                        <li>Reduced Pain</li>
-                        <li>No Recurrence Of Gallstones</li>
-                    </ul>
-                    <div class="text-color-pink h5">Common Symptoms:</div>
-                    <ul class="font-20">
-                        <li>Abdominal Pain (Right Side)</li>
-                        <li>Nausea, Vomiting</li>
-                        <li>Bloating, Constipation, Or Diarrhea</li>
-                    </ul>
-                </div>
-            </div>
+          </div>
+          <div class="d-flex flex-column gap-2 w-55">
+              <div class="text-color-pink h3 fw-bold">Laparoscopic Surgeries</div>
+              <div class="d-flex flex-column gap-1">
+                  <div class="text-color-pink h5">Gall Bladder Removal (Laparoscopic Cholecystectomy)</div>
+                  <ul class="font-16">
+                      <li>A Small Organ Under The Liver That Stores Bile.</li>
+                      <li>Surgery Is Commonly Done To Remove Gallstones And Ease Pain.</li>
+                      <li>Performed Using Keyhole Technique For Faster Recovery.</li>
+                      <li>Types: Open Or Laparoscopic (Preferred For Minimal Pain).</li>
+                  </ul>
+                  <div class="text-color-pink h5">Benefits:</div>
+                  <ul class="font-16">
+                      <li>Quick Recovery</li>
+                      <li>No Large Cuts</li>
+                      <li>Reduced Pain</li>
+                      <li>No Recurrence Of Gallstones</li>
+                  </ul>
+                  <div class="text-color-pink h5">Common Symptoms:</div>
+                  <ul class="font-16">
+                      <li>Abdominal Pain (Right Side)</li>
+                      <li>Nausea, Vomiting</li>
+                      <li>Bloating, Constipation, Or Diarrhea</li>
+                  </ul>
+              </div>
+          </div>
         </div>
+        <div class="d-flex testimonials-details justify-content-center">
+          <div class="d-flex flex-column p-4 gap-2">
+            <div class="text-color-blue">Dr. Sachin Subbaraya</div>
+            <div class="testimonials-text d-flex flex-column gap-1">
+              <div>Dr Sachin Subbaraya is a renowned Laparoscopic Surgeon and has specialised in Gall Bladder Removal Surgery at sarjapur, Bangalore.</div>
+              <div>Best surgeon Dr Sachin Subbaraya for Gall Bladder Removal Surgery, General & Laparoscopic Surgery.</div>
+              <div>Book an Appointment Now with one of the Best Surgeons for Gall Bladder Removal Surgery in Bangalore.</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <div class="d-flex my-4 gap-2">
-            <div class="d-flex flex-column align-items-center gap-4">
-                <img src="assets/external/hernia.png" alt="Hernia" width="55%"/>
-                <div class="text-center my-2">
-                    <button class="btn-blue text-white" (click)="onBookAnAppointmentBtnClick()">Book an Appointment</button>
-                </div>
-            </div>
-            <div class="d-flex flex-column gap-2">
-                <div class="text-color-pink h3 fw-bold">Hernia Surgery</div>
-                <div class="d-flex flex-column gap-1">
-                    <div class="text-color-pink h5">What is Hernia?</div>
-                    <div class="h5">When An Organ Pushes Through A Weak Spot in Muscles. Common in Abdomen, Groin, Or Belly Area</div>
-                    <div class="text-color-pink h5">Causes:</div>
-                    <ul class="font-20">
-                        <li>Heavy Lifting</li>
-                        <li>Obesity</li>
-                        <li>Constipation</li>
-                        <li>Poor Nutrition</li>
-                        <li>Previous Surgeries</li>
-                    </ul>
-                    <div class="text-color-pink h5">Symptoms:</div>
-                    <ul class="font-20">
-                        <li>Groin Swelling</li>
-                        <li>Pain When Lifting</li>
-                        <li>Acid Reflux</li>
-                        <li>Dull Ache</li>
-                    </ul>
-                    <div class="text-color-pink h5">Why Laparoscopic Surgery?:</div>
-                    <ul class="font-20">
-                        <li>No Major Cuts Or Stitches</li>
-                        <li>Painless & Faster Healing</li>
-                        <li>Short Hospital Stay</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="d-flex flex-column my-4 gap-2 align-items-center">
+        <div class="d-flex justify-content-between w-80">
+          <div class="d-flex flex-column gap-4 w-30">
+              <img src="assets/external/hernia.png" alt="Hernia"/>
+              <div class="text-center my-2">
+                  <button class="btn-blue text-white" (click)="onBookAnAppointmentBtnClick()">Book an Appointment</button>
+              </div>
+          </div>
+          <div class="d-flex flex-column gap-2 w-55">
+              <div class="text-color-pink h3 fw-bold">Hernia Surgery</div>
+              <div class="d-flex flex-column gap-1">
+                  <div class="text-color-pink h5">What is Hernia?</div>
+                  <div class="h6">When An Organ Pushes Through A Weak Spot in Muscles. <br/>Common in Abdomen, Groin, Or Belly Area</div>
+                  <div class="text-color-pink h5">Causes:</div>
+                  <ul class="font-16">
+                      <li>Heavy Lifting</li>
+                      <li>Obesity</li>
+                      <li>Constipation</li>
+                      <li>Poor Nutrition</li>
+                      <li>Previous Surgeries</li>
+                  </ul>
+                  <div class="text-color-pink h5">Symptoms:</div>
+                  <ul class="font-16">
+                      <li>Groin Swelling</li>
+                      <li>Pain When Lifting</li>
+                      <li>Acid Reflux</li>
+                      <li>Dull Ache</li>
+                  </ul>
+                  <div class="text-color-pink h5">Why Laparoscopic Surgery?:</div>
+                  <ul class="font-16">
+                      <li>No Major Cuts Or Stitches</li>
+                      <li>Painless & Faster Healing</li>
+                      <li>Short Hospital Stay</li>
+                  </ul>
+              </div>
+          </div>
         </div>
+        <div class="d-flex testimonials-details justify-content-center">
+          <div class="d-flex flex-column p-4 gap-2">
+            <div class="text-color-blue">Dr. Sachin Subbaraya</div>
+            <div class="testimonials-text d-flex flex-column gap-1">
+              <div>Dr Sachin Subbaraya is a renowned Laparoscopic Surgeon and has specialised in Gall Bladder Removal Surgery at sarjapur, Bangalore.</div>
+              <div>Best surgeon Dr Sachin Subbaraya for Gall Bladder Removal Surgery, General & Laparoscopic Surgery.</div>
+              <div>Book an Appointment Now with one of the Best Surgeons for Gall Bladder Removal Surgery in Bangalore.</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <div class="d-flex my-4 gap-2">
-            <div class="d-flex flex-column align-items-center gap-4">
-                <img src="assets/external/appendix.png" alt="Appendix" width="55%"/>
-                <div class="text-center my-2">
-                    <button class="btn-blue text-white" (click)="onBookAnAppointmentBtnClick()">Book an Appointment</button>
-                </div>
-            </div>
-            <div class="d-flex flex-column gap-2">
-                <div class="text-color-pink h3 fw-bold">Appendix Removal (Appendectomy)</div>
-                <div class="d-flex flex-column gap-1">
-                    <div class="text-color-pink h5">What Is It?</div>
-                    <div class="h5">Surgical Removal Of An Inflamed Appendix (Appendicitis). Can Be Done As:</div>
-                    <ul class="font-20">
-                        <li>Open Surgery (More Painful)</li>
-                        <li>Laparoscopic Surgery (Minimally Invasive & Preferred)</li>
-                    </ul>
-                    <div class="text-color-pink h5">Benefits Of Laparoscopic:</div>
-                    <ul class="font-20">
-                        <li>Minimal Pain</li>
-                        <li>Quick Recovery</li>
-                        <li>Small incisions</li>
-                        <li>Less Risk Of Infection</li>
-                    </ul>
-                    <div class="text-color-pink h5">Common Symptoms:</div>
-                    <ul class="font-20">
-                        <li>Abdominal Pain (Worse With Movement)</li>
-                        <li>Bloating</li>
-                        <li>Nausea & vomiting</li>
-                        <li>Low-Grade Fever</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="d-flex flex-column my-4 gap-2 align-items-center">
+        <div class="d-flex justify-content-between w-80">
+          <div class="d-flex flex-column gap-4 w-30">
+              <img src="assets/external/appendix.png" alt="Appendix"/>
+              <div class="text-center my-2">
+                  <button class="btn-blue text-white" (click)="onBookAnAppointmentBtnClick()">Book an Appointment</button>
+              </div>
+          </div>
+          <div class="d-flex flex-column gap-2 w-55">
+              <div class="text-color-pink h3 fw-bold">Appendix Removal (Appendectomy)</div>
+              <div class="d-flex flex-column gap-1">
+                  <div class="text-color-pink h5">What Is It?</div>
+                  <div class="h6">Surgical Removal Of An Inflamed Appendix (Appendicitis). Can Be Done As:</div>
+                  <ul class="font-16">
+                      <li>Open Surgery (More Painful)</li>
+                      <li>Laparoscopic Surgery (Minimally Invasive & Preferred)</li>
+                  </ul>
+                  <div class="text-color-pink h5">Benefits Of Laparoscopic:</div>
+                  <ul class="font-16">
+                      <li>Minimal Pain</li>
+                      <li>Quick Recovery</li>
+                      <li>Small incisions</li>
+                      <li>Less Risk Of Infection</li>
+                  </ul>
+                  <div class="text-color-pink h5">Common Symptoms:</div>
+                  <ul class="font-16">
+                      <li>Abdominal Pain (Worse With Movement)</li>
+                      <li>Bloating</li>
+                      <li>Nausea & vomiting</li>
+                      <li>Low-Grade Fever</li>
+                  </ul>
+              </div>
+          </div>
         </div>
+        <div class="d-flex testimonials-details justify-content-center">
+          <div class="d-flex flex-column p-4 gap-2">
+            <div class="text-color-blue">Dr. Sachin Subbaraya</div>
+            <div class="testimonials-text d-flex flex-column gap-1">
+              <div>Dr Sachin Subbaraya is a renowned Laparoscopic Surgeon and has specialised in Gall Bladder Removal Surgery at sarjapur, Bangalore.</div>
+              <div>Best surgeon Dr Sachin Subbaraya for Gall Bladder Removal Surgery, General & Laparoscopic Surgery.</div>
+              <div>Book an Appointment Now with one of the Best Surgeons for Gall Bladder Removal Surgery in Bangalore.</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <div class="d-flex my-4 gap-2">
-            <div class="d-flex flex-column align-items-center gap-4">
-                <img src="assets/external/piles.png" alt="Piles" width="55%"/>
-                <div class="text-center my-2">
-                    <button class="btn-blue text-white" (click)="onBookAnAppointmentBtnClick()">Book an Appointment</button>
-                </div>
-            </div>
-            <div class="d-flex flex-column gap-2">
-                <div class="text-color-pink h3 fw-bold">Piles (Hemorrhoids) Treatment</div>
-                <div class="d-flex flex-column gap-1">
-                    <div class="text-color-pink h5">What Are Piles?</div>
-                    <div class="h5">Swollen Veins In The Rectum Or Anus. Can Be Internal Or External.</div>
-                    <div class="text-color-pink h5">Symptoms:</div>
-                    <ul class="font-20">
-                        <li>Bleeding During Bowel Movements</li>
-                        <li>Pain, Itching, Or Swelling In Rectal Area</li>
-                        <li>Hard Lump In Anus</li>
-                    </ul>
-                    <div class="text-color-pink h5">Risk Factors:</div>
-                    <ul class="font-20">
-                        <li>Constipation</li>
-                        <li>Obesity</li>
-                        <li>Pregnancy</li>
-                        <li>Low-Fiber Diet</li>
-                    </ul>
-                    <div class="text-color-pink h5">Treatment Options:</div>
-                    <ul class="font-20">
-                        <li>Home Remedies (Initial Stage)</li>
-                        <li>Traditional Surgery (Painful)</li>
-                        <li>Laser Treatment (Painless & Effective)</li>
-                    </ul>
-                    <div class="text-color-pink h5">Why Choose Laser Treatment?:</div>
-                    <ul class="font-20">
-                        <li>No Cuts Or Stitches</li>
-                        <li>Painless 30-45 Min Procedure</li>
-                        <li>Discharge Same Day</li>
-                        <li>Back To Normal in 48 Hours</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="d-flex flex-column my-4 gap-2 align-items-center">
+        <div class="d-flex justify-content-between w-80">
+          <div class="d-flex flex-column gap-4 w-30">
+              <img src="assets/external/piles.png" alt="Piles"/>
+              <div class="text-center my-2">
+                  <button class="btn-blue text-white" (click)="onBookAnAppointmentBtnClick()">Book an Appointment</button>
+              </div>
+          </div>
+          <div class="d-flex flex-column gap-2 w-55">
+              <div class="text-color-pink h3 fw-bold">Piles (Hemorrhoids) Treatment</div>
+              <div class="d-flex flex-column gap-1">
+                  <div class="text-color-pink h5">What Are Piles?</div>
+                  <div class="h6">Swollen Veins In The Rectum Or Anus. Can Be Internal Or External.</div>
+                  <div class="text-color-pink h5">Symptoms:</div>
+                  <ul class="font-16">
+                      <li>Bleeding During Bowel Movements</li>
+                      <li>Pain, Itching, Or Swelling In Rectal Area</li>
+                      <li>Hard Lump In Anus</li>
+                  </ul>
+                  <div class="text-color-pink h5">Risk Factors:</div>
+                  <ul class="font-16">
+                      <li>Constipation</li>
+                      <li>Obesity</li>
+                      <li>Pregnancy</li>
+                      <li>Low-Fiber Diet</li>
+                  </ul>
+                  <div class="text-color-pink h5">Treatment Options:</div>
+                  <ul class="font-16">
+                      <li>Home Remedies (Initial Stage)</li>
+                      <li>Traditional Surgery (Painful)</li>
+                      <li>Laser Treatment (Painless & Effective)</li>
+                  </ul>
+                  <div class="text-color-pink h5">Why Choose Laser Treatment?:</div>
+                  <ul class="font-16">
+                      <li>No Cuts Or Stitches</li>
+                      <li>Painless 30-45 Min Procedure</li>
+                      <li>Discharge Same Day</li>
+                      <li>Back To Normal in 48 Hours</li>
+                  </ul>
+              </div>
+          </div>
         </div>
+        <div class="d-flex testimonials-details justify-content-center">
+          <div class="d-flex flex-column p-4 gap-2">
+            <div class="text-color-blue">Dr. Sachin Subbaraya</div>
+            <div class="testimonials-text d-flex flex-column gap-1">
+              <div>Dr Sachin Subbaraya is a renowned Laparoscopic Surgeon and has specialised in Gall Bladder Removal Surgery at sarjapur, Bangalore.</div>
+              <div>Best surgeon Dr Sachin Subbaraya for Gall Bladder Removal Surgery, General & Laparoscopic Surgery.</div>
+              <div>Book an Appointment Now with one of the Best Surgeons for Gall Bladder Removal Surgery in Bangalore.</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <app-footer></app-footer>
 </div>
