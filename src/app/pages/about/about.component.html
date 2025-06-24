@@ -1,53 +1,56 @@
-<div class="about d-flex flex-column gap-2">
+<div class="about-page d-flex flex-column gap-2">
   <a
     [href]="'https://wa.me/' + mobile"
-    class="text-black text-decoration-none whatsapp-icon m-3"
+    class="text-black text-decoration-none whatsapp-fixed-icon m-3"
     target="_blank"
   >
-    <img src="assets/external/whatsappicon.png" width="90" />
+    <img src="assets/external/whatsappicon.png" width="90" alt="WhatsApp" />
   </a>
-  <div class="about-image d-flex align-items-center justify-content-center">
-    <span class="font-70 text-white fw-bold text-center">About Me</span>
+  <div class="about-hero d-flex align-items-center justify-content-center">
+    <span class="about-hero-title text-white fw-bold text-center"
+      >About Me</span
+    >
   </div>
-  <!-- Heading -->
   <div class="text-center px-3 mt-4">
-    <div class="about-heading-text-1">
+    <div class="about-main-heading">
       Dedicated To Excellence In General <br />
-      <span class="text-color-pink">& Gastrointestinal Surgery</span>
+      <span class="text-primary-pink">& Gastrointestinal Surgery</span>
     </div>
-    <div class="bg-pink mx-auto my-2" style="width: 35%; height: 3px"></div>
-    <div class="font-24">
+    <div
+      class="bg-primary-pink mx-auto my-2"
+      style="width: 35%; height: 3px"
+    ></div>
+    <div class="about-sub-heading">
       Minimizing Recovery Time And Enhancing Outcomes <br />
       Through Advanced Surgical Techniques.
     </div>
   </div>
 
-  <!-- Profile Section -->
   <div class="container py-5">
-    <div class="row g-4">
+    <div class="row g-4 justify-content-center">
       <!-- Left Image Block -->
-      <div
-        class="col-md-6 text-center d-flex flex-column align-items-center gap-3"
-      >
+      <div class="col-12 col-md-6 d-flex flex-column align-items-center gap-3">
         <img
           src="/assets/external/rectangle111171-nqgg-700w.png"
           alt="Dr. Sachin Subbaraya"
-          class="img-fluid w-75"
+          class="img-fluid img-profile"
         />
         <div>
-          <div class="text-color-blue dr-name">Dr. Sachin Subbaraya</div>
-          <div class="text-muted dr-details">
+          <div class="dr-name">Dr. Sachin Subbaraya</div>
+          <div class="dr-designation text-muted">
             Associate Consultant<br />General and Gastrointestinal Surgery
           </div>
         </div>
       </div>
 
       <!-- Right Info Block -->
-      <div class="col-md-6 d-flex flex-column gap-4 details">
+      <div class="col-12 col-md-6 d-flex flex-column gap-4 px-4">
         <!-- Profile Info -->
         <div>
-          <div class="text-color-pink fw-semibold">Professional Profile:</div>
-          <div class="text-color-blue">
+          <div class="dr-info-label text-primary-pink">
+            Professional Profile:
+          </div>
+          <div class="dr-info-text text-primary-blue">
             Name: Dr. Sachin Subbaraya<br />
             Designation: Associate Consultant<br />
             Department: General and Gastrointestinal Surgery<br />
@@ -58,8 +61,8 @@
 
         <!-- Education -->
         <div>
-          <div class="text-color-pink fw-semibold">Education:</div>
-          <div class="text-color-blue">
+          <div class="dr-info-label text-primary-pink">Education:</div>
+          <div class="dr-info-text text-primary-blue">
             MBBS: Completed At [University Name, If Available].<br />
             MS (General Surgery): Prestigious MS Ramaiah Institute.
           </div>
@@ -67,8 +70,10 @@
 
         <!-- Journey -->
         <div>
-          <div class="text-color-pink fw-semibold">Professional Journey:</div>
-          <div class="text-color-blue">
+          <div class="dr-info-label text-primary-pink">
+            Professional Journey:
+          </div>
+          <div class="dr-info-text text-primary-blue">
             Senior Resident: Apollo Hospital.<br />
             Associate Consultant: Manipal Hospital.
           </div>
@@ -76,8 +81,8 @@
 
         <!-- Expertise -->
         <div>
-          <div class="text-color-pink fw-semibold">Expertise:</div>
-          <div class="text-color-blue">
+          <div class="dr-info-label text-primary-pink">Expertise:</div>
+          <div class="dr-info-text text-primary-blue">
             Minimal Access Laparoscopic Surgery For Abdominal Conditions.<br />
             Laser Proctology And Varicose Vein Treatments.
           </div>
@@ -87,7 +92,7 @@
   </div>
 
   <!-- About Description -->
-  <div class="desc-font px-3 py-4 text-center">
+  <div class="about-description-text px-5 py-4 text-center">
     <p>
       <strong>Dr. Sachin Subbaraya</strong> is an accomplished General and
       Laparoscopic Surgeon with over a decade of experience in advanced surgical
@@ -109,10 +114,7 @@
 
   <!-- CTA Button -->
   <div class="text-center my-4">
-    <button
-      class="btn-blue text-white px-4 py-2"
-      (click)="onBookAnAppointmentBtnClick()"
-    >
+    <button class="btn-primary-blue" (click)="onBookAnAppointmentBtnClick()">
       Book an Appointment
     </button>
   </div>
