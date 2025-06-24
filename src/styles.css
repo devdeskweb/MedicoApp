@@ -631,9 +631,3 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-@media (max-width: 575px) {
-  html {
-    font-size: 8px;
-  }
-}

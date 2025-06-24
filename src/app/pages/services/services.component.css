@@ -1,66 +1,131 @@
-.service {
-  font-family: Poppins;
-}
-.service-image {
-    height: 50vh;
-    background-size: cover;
-    background-color: #00149875;
-    background-image: url(/assets/external/services-screen.png);
-}
-.font-70{
-    font-size: 70px;
-}
-
-.service-heading-text-1 {
-  font-size: 2.25rem;
-  font-weight: 600;
+.service-hero {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-color: #00149875;
+  background-image: linear-gradient(
+      rgba(0, 20, 152, 0.45),
+      rgba(0, 20, 152, 0.45)
+    ),
+    url(/assets/external/services-screen.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
   text-align: center;
 }
 
-.text-color-pink {
-  color: rgba(238, 48, 145, 1);
-}
-.text-color-blue {
-  color: rgba(0, 26, 93, 1);
-}
-.bg-pink{
-    background-color: rgba(238, 48, 145, 1);
+.service-hero-title {
+  font-size: clamp(2.5rem, 8vw, 4.375rem);
+  font-weight: 700;
+  line-height: 1.2;
 }
 
-.btn-blue {
-  font-size: 1.5rem;
+.service-heading {
+  font-size: clamp(1.5rem, 5vw, 2.25rem);
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.text-primary-pink {
+  color: #ee3091;
+}
+.text-primary-blue {
+  color: #001a5d;
+}
+.bg-primary-pink {
+  background-color: #ee3091;
+}
+
+.btn-primary-blue {
+  font-size: 1.25rem;
   border-radius: 0.25rem;
-  padding: 0.3125rem 0.625rem;
-  background-color: rgba(0, 26, 93, 1);
+  padding: 0.5rem 1.5rem;
+  background-color: #001a5d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.font-16{
-    font-size: 1.1rem;
-}
-.whatsapp-icon{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: 9999;
+.btn-primary-blue:hover {
+  background-color: #002e8a;
 }
 
-.testimonials-details{
-    width: 80%;
-    background-color: #f7f7f7;
-    font-size: 28px;
-    font-weight: 600;
+.font-size-base {
+  font-size: 1rem;
 }
-.testimonials-text{
-    font-size: 18px;
-    font-weight: 500;
-    color: #4C4C4C;
+
+.whatsapp-fixed-icon {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 9999;
 }
-.w-80{
-    width: 80%;
+
+.whatsapp-fixed-icon img {
+  width: 70px;
+  height: auto;
+  max-width: 100%;
 }
-.w-30{
-    width: 30%;
+.testimonial-card {
+  background-color: #f7f7f7;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
 }
-.w-55{
-    width: 55%;
+.testimonial-doctor-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.testimonial-text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4c4c4c;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-rounded {
+  border-radius: 0.5rem !important;
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+@media (max-width: 991.98px) {
+  .service-hero {
+    height: 30vh;
+  }
+
+  .whatsapp-fixed-icon img {
+    width: 60px;
+  }
+
+  .testimonial-card {
+    padding: 1rem;
+  }
+
+  .testimonial-doctor-name {
+    font-size: 1.4rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .img-large-screen-fixed-height {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+  }
 }
