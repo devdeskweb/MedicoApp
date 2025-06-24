@@ -1,41 +1,82 @@
-.gallery{
-    font-family: Poppins;
-}
-.gallery-image{
-    height: 50vh;
-    background-size: cover;
-    background-color: #00149875;
-    background-image: url(/assets/external/gallery-screen.png);
-}
-.font-70{
-    font-size: 70px;
-}
-
-.gallery-heading-text-1{
-    font-size: 40px;
-    font-weight: 600;
-}
-
-.text-color-pink {
-    color: rgba(238, 48, 145, 1)
-}
-.text-color-blue {
-    color: rgba(0, 26, 93, 1);
+.gallery-hero {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-color: #00149875;
+  background-image: linear-gradient(
+      rgba(0, 20, 152, 0.45),
+      rgba(0, 20, 152, 0.45)
+    ),
+    url(/assets/external/gallery-screen.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
 }
 
-.w-80{
-    width: 80%;
+.gallery-hero-title {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.2;
 }
 
-.btn-blue{
-    font-size: 26px;
-    border-radius: 4px;
-    padding: 5px 10px;
-    background-color: rgba(0, 26, 93, 1);
+.gallery-main-heading {
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.3;
 }
-.whatsapp-icon{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: 9999;
+
+.text-primary-pink {
+  color: #ee3091;
+}
+
+.text-primary-blue {
+  color: #001a5d;
+}
+
+.bg-primary-black {
+  background-color: #000;
+}
+
+.btn-primary-blue {
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #001a5d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary-blue:hover {
+  background-color: #002e8a;
+}
+
+.whatsapp-fixed-icon {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 9999;
+}
+
+.whatsapp-fixed-icon img {
+  width: 70px;
+  height: auto;
+  max-width: 100%;
+}
+
+.gallery-img {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+  border-radius: 0.5rem; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s ease-in-out; 
+}
+
+.gallery-img:hover {
+  transform: scale(1.02);
 }

@@ -1,46 +1,118 @@
-<div class="gallery d-flex flex-column gap-2">
-    <a [href]="'https://wa.me/' + mobile" class="text-black text-decoration-none whatsapp-icon m-3" target="_blank">
-        <img src="assets/external/whatsappicon.png" width="90" />
-    </a>
-    <div class="gallery-image d-flex align-items-center justify-content-center">
-        <span class="font-70 text-white fw-bold">Patient Moments & Milestones</span>
+<div class="gallery-page d-flex flex-column gap-2">
+  <a
+    [href]="'https://wa.me/' + mobile"
+    class="text-black text-decoration-none whatsapp-fixed-icon m-3"
+    target="_blank"
+  >
+    <img src="assets/external/whatsappicon.png" width="90" alt="WhatsApp" />
+  </a>
+  <div class="gallery-hero d-flex align-items-center justify-content-center">
+    <span class="gallery-hero-title text-white fw-bold"
+      >Patient Moments & Milestones</span
+    >
+  </div>
+  <div class="d-flex flex-column gap-1 align-items-center my-4">
+    <div class="gallery-main-heading text-primary-pink">
+      Precision Care in Gastrointestinal Surgery <br />
+      <span class="text-black">Transforming Lives, Procedure At a Time!</span>
     </div>
-    <div class="d-flex flex-column gap-1 align-items-center my-3">
-        <div class="gallery-heading-text-1 text-center text-color-pink">Precision Care in Gastrointestinal Surgery <br/>
-            <span class="text-black">Transforming Lives, Procedure At a Time!</span>
+    <div class="bg-primary-black" style="width: 55%; height: 4px"></div>
+  </div>
+  <div class="container my-4">
+    <!-- First row of gallery images -->
+    <div class="row g-3 mb-4">
+      <!-- Left Column Group -->
+      <div class="col-12 col-md-6">
+        <div class="d-flex flex-column gap-3">
+          <img
+            src="/assets/external/gallery-1.png"
+            alt="Gallery 1"
+            class="gallery-img"
+          />
+          <div class="row g-3">
+            <div class="col-6">
+              <img
+                src="/assets/external/gallery-2.png"
+                alt="Gallery 2"
+                class="gallery-img"
+              />
+            </div>
+            <div class="col-6">
+              <img
+                src="/assets/external/gallery-3.png"
+                alt="Gallery 3"
+                class="gallery-img"
+              />
+            </div>
+          </div>
         </div>
-        <div class="bg-black" style="width: 55%; height: 4px;"></div>
-    </div>
-    <div class="gallery-pics d-flex flex-column align-items-center gap-3 my-4">
-        <div class="d-flex justify-content-evenly w-80">
-            <div class="d-flex flex-column gap-3">
-                <img src="/assets/external/gallery-1.png" alt="Gallery 1" width="92%"/>
-                <div class="d-flex gap-3">
-                    <img src="/assets/external/gallery-2.png" alt="Gallery 2" width="45%" />
-                    <img src="/assets/external/gallery-3.png" alt="Gallery 3" width="45%" />
-                </div>
-            </div>
-            <div class="d-flex flex-column gap-3">
-                <img src="/assets/external/gallery-4.png" alt="Gallery 4" width="94%"/>
-                <img src="/assets/external/gallery-5.png" alt="Gallery 5" width="94%"/>
-            </div>
+      </div>
+      <!-- Right Column Group -->
+      <div class="col-12 col-md-6">
+        <div class="d-flex flex-column gap-3">
+          <img
+            src="/assets/external/gallery-4.png"
+            alt="Gallery 4"
+            class="gallery-img"
+          />
+          <img
+            src="/assets/external/gallery-5.png"
+            alt="Gallery 5"
+            class="gallery-img"
+          />
         </div>
-        <div class="d-flex justify-content-evenly w-80">
-            <div class="d-flex flex-column gap-3">
-                <img src="/assets/external/gallery-6.png" alt="Gallery 6" width="92%"/>
-                <div class="d-flex gap-3">
-                    <img src="/assets/external/gallery-7.png" alt="Gallery 7" width="45%" />
-                    <img src="/assets/external/gallery-8.png" alt="Gallery 8" width="45%" />
-                </div>
+      </div>
+    </div>
+
+    <!-- Second row of gallery images -->
+    <div class="row g-3">
+      <!-- Left Column Group -->
+      <div class="col-12 col-md-6">
+        <div class="d-flex flex-column gap-3">
+          <img
+            src="/assets/external/gallery-6.png"
+            alt="Gallery 6"
+            class="gallery-img"
+          />
+          <div class="row g-3">
+            <div class="col-6">
+              <img
+                src="/assets/external/gallery-7.png"
+                alt="Gallery 7"
+                class="gallery-img"
+              />
             </div>
-            <div class="d-flex flex-column gap-3">
-                <img src="/assets/external/gallery-9.png" alt="Gallery 9" width="94%"/>
-                <img src="/assets/external/gallery-10.png" alt="Gallery 10" width="94%"/>
+            <div class="col-6">
+              <img
+                src="/assets/external/gallery-8.png"
+                alt="Gallery 8"
+                class="gallery-img"
+              />
             </div>
+          </div>
         </div>
+      </div>
+      <!-- Right Column Group -->
+      <div class="col-12 col-md-6">
+        <div class="d-flex flex-column gap-3">
+          <img
+            src="/assets/external/gallery-9.png"
+            alt="Gallery 9"
+            class="gallery-img"
+          />
+          <img
+            src="/assets/external/gallery-10.png"
+            alt="Gallery 10"
+            class="gallery-img"
+          />
+        </div>
+      </div>
     </div>
-    <div class="text-center my-4">
-        <button class="btn-blue text-white" (click)="onBookAnAppointmentBtnClick()">Book an Appointment</button>
-    </div>
-    <app-footer></app-footer>
+  </div>
+  <div class="text-center my-5">
+    <button class="btn-primary-blue" (click)="onBookAnAppointmentBtnClick()">
+      Book an Appointment
+    </button>
+  </div>
+  <app-footer></app-footer>
 </div>
