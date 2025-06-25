@@ -20,7 +20,7 @@
 }
 
 .contact-details-text {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.75rem;
 }
 
@@ -41,5 +41,11 @@
   .social-icon {
     transform: translateY(-25%);
     right: 10px;
+  }
+  .font-20 {
+    font-size: 0.625rem;
+  }
+  .disclaimer {
+    padding: 0.5rem;
   }
 }

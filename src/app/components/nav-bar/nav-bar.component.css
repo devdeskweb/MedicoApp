@@ -23,17 +23,17 @@
 
 .nav-bar-title {
   color: rgba(11, 24, 109, 1);
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   font-weight: 600;
 }
    
 .nav-bar-contact-email {
-  padding: 1.125rem;
+  padding: 0.5rem;
   background-color: rgba(0, 20, 152, 1);
 }
    
 .nav-bar-text-contact-email {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
 }
    
@@ -64,5 +64,17 @@
 @media (min-width: 992px) {
   .mobile-popover-menu {
     display: none !important;
+  }
+  .nav-bar-contact-email {
+    padding: 1.125rem;
+  }
+  .nav-bar-text-contact-email {
+    font-size: 1.5rem;
+  }
+  .nav-bar-title {
+    font-size: 1.875rem;
+  }
+  .w-90{
+    width: 90%;
   }
 }

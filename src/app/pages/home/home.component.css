@@ -72,20 +72,16 @@
 
 .stats-section {
   background-color: rgba(228, 235, 239, 1);
-  padding: 2rem 0;
 }
 
 .stat-value {
-  font-size: clamp(2.5rem, 8vw, 3.75rem);
+  font-size: clamp(2.5rem, 8vw, 3rem);
   font-weight: 500;
-  line-height: 1;
-  display: block;
 }
 
 .stat-label {
-  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-size: clamp(1.5rem, 5vw, 2rem);
   font-weight: 500;
-  margin-top: 0.5rem;
   display: block;
 }
 
@@ -119,6 +115,45 @@
   width: 100%;
   max-width: 40%;
   height: auto;
+}
+
+.doctor-img {
+  background-size: cover;
+  background-image: url(/assets/external/doctor-2.png);
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex: 1;
+}
+
+.shade-img {
+  background-size: cover;
+  background-image: url(/assets/external/shade-1.png);
+  background-position: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2rem;
+}
+
+.home-heading-text-4{
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.font-20{
+  font-size: 20px;
+}
+.text-color-blue {
+  color: rgba(0, 26, 93, 1);
+}
+.btn-pink {
+  font-size: 26px;
+  padding: 6px 10px;
+  background-color: rgba(238, 48, 145, 1);
 }
 
 @media (min-width: 768px) {
@@ -270,6 +305,17 @@
   color: #757474;
 }
 
+.home-heading-text-1{
+  font-size: 40px;
+  font-weight: 600;
+}
+.font-24{
+  font-size: 24px;
+}
+.text-color-pink {
+  color: rgba(238, 48, 145, 1)
+}
+
 @media (max-width: 991.98px) {
   .whatsapp-fixed-icon img {
     width: 60px;
@@ -300,5 +346,28 @@
   }
   .testimonial-author {
     text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-heading-text-1{
+    font-size: 30px;
+  }
+  .doctor-img {
+    height: 100%;
+    min-height: 450px;
+  }
+
+  .shade-img {
+    padding: 1rem;
+  }
+
+  .home-heading-text-4 {
+    font-size: 1.75rem;
+  }
+
+  .btn-pink {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
   }
 }
