@@ -86,10 +86,11 @@
       <div class="d-flex align-items-center rounded-2 border px-3 py-2">
         <input
           required
-          type="tel"
+          type="number"
           class="input-box"
           formControlName="mobile"
-          placeholder="+91 98453 50214"
+          placeholder="9845350214"
+          maxlength="10"
         />
       </div>
       <div *ngIf="submitted && f.mobile.errors" class="text-danger">

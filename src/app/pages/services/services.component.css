@@ -99,6 +99,9 @@
 .shadow-sm {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
+.service-img:hover{
+  transform: scale(1.02);
+}
 
 @media (max-width: 991.98px) {
   .service-hero {
