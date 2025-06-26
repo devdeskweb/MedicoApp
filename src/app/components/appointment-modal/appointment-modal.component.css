@@ -1,5 +1,14 @@
-.heading-text-1{
-    font-size: 35px;
-    font-family: Poppins;
-    font-weight: 600;
+.heading-text-1 {
+  font-size: 35px;
+  font-family: Poppins;
+  font-weight: 600;
+}
+@media (max-width: 786px) {
+  .heading-text-1 {
+    font-size: 18px;
+  }
+  .btn-close{
+    width: 0.625rem;
+    height: 0.625rem;
+  }
 }
