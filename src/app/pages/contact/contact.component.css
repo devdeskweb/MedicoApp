@@ -101,3 +101,10 @@
     padding: 0.5rem 0.75rem;
   }
 }
+
+@media (max-width: 992px) {
+  .contact-image {
+    height: 30vh;
+    background-position: center;
+  }
+}

@@ -111,13 +111,13 @@
     </div>
   </div>
   <!-- Contact Info (always visible) -->
-  <div
+  <div *ngIf="!canHide"
     class="nav-bar-contact-email d-flex justify-content-center align-items-center"
   >
-    <div class="nav-bar-text-contact-email text-white d-flex flex-lg-row flex-column">
-      <div>Contact: <a href="tel:+919901304020" class="text-decoration-none text-white">+91 99013 04020</a></div>
-       <span class="d-none d-lg-block px-2" > | </span> 
-       <div>Email: <a href="mailto:Dr.SachinSubbaraya@Gmail.com" class=" text-white text-decoration-none">Dr.SachinSubbaraya@Gmail.Com</a></div>
+    <div class="nav-bar-text-contact-email text-white d-flex">
+      <div>Contact: <a [href]="'tel:' + mobile" class="text-decoration-none text-white">+91 7337774020</a></div>
+       <span class="px-2" > | </span> 
+       <div>Email: <a [href]="'mailto:' + email" class=" text-white text-decoration-none">Dr.SachinSubbaraya@Gmail.Com</a></div>
     </div>
   </div>
 </div>

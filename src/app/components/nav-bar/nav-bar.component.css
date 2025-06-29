@@ -24,7 +24,7 @@
 }
    
 .nav-bar-contact-email {
-  padding: 0.5rem;
+  padding: 1.25rem;
   background-color: rgba(0, 20, 152, 1);
 }
    
@@ -61,14 +61,18 @@
   .mobile-popover-menu {
     display: none !important;
   }
+  .nav-bar-top-features{
+    gap: 2rem;
+    font-size: 1.3rem;
+  }
   .nav-bar-contact-email {
-    padding: 1.125rem;
+    padding: 1.25rem;
   }
   .nav-bar-text-contact-email {
     font-size: 1.5rem;
   }
   .nav-bar-title {
-    font-size: 1.875rem;
+    font-size: 1.5rem;
   }
   .w-90{
     width: 90%;

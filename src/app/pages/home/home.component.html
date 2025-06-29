@@ -1,21 +1,72 @@
 <div class="home-page d-flex flex-column w-100">
-  <app-carousel></app-carousel>
-  <div class="stats-section w-100 d-flex flex-column flex-md-row justify-content-around align-items-center py-1">
-    <div class="row w-100 text-center mx-0">
-      <div class="col-12 col-md-4 mb-3 mb-md-0">
-        <span class="stat-value">500+</span><br />
-        <span class="stat-label">Happy Patients</span>
+  <app-carousel class="d-none d-md-block"></app-carousel>
+  <div class="d-flex flex-column justify-content-center align-items-center p-4 px-sm-0 py-sm-4 d-md-none">
+    <div class="home-profile-box d-flex gap-2 bg-primary-blue rounded-4 py-4 px-2">
+      <div class="home-profile d-flex flex-column gap-4 px-2" style="width: 80%;">
+        <div class="home-profile-top d-flex gap-4">
+          <div class="circle">
+            <div class="dr-circle">
+            </div>
+          </div>
+          <div class="home-profile-content text-white">
+            <div class="heading text-nowrap">Dr. Sachin Subbaraya</div>
+            <div class="sub-heading"> Experienced General & Laparoscopic Surgeon</div>
+          </div>
+        </div>
+        <div class="home-profile-bottom d-flex justify-content-between rounded-4 p-2 p-sm-3 text-white">
+          <div class="timings-font">Monday To Saturday</div>
+          <div class="border-start border-white px-sm-4"></div>
+          <div class="timings-font">9.00am-6.00pm</div>
+        </div>
       </div>
-      <div class="col-12 col-md-4 mb-3 mb-md-0">
-        <span class="stat-value">100+</span><br />
-        <span class="stat-label">Surgeries</span>
+      <div class="d-flex flex-column gap-3 px-2">
+        <a [href]="'tel:' + mobile">
+          <div class="circle d-flex justify-content-center align-items-center">
+            <img src="assets/external/phone.png" class="phone-img"/>
+          </div>
+        </a>
+        <a [href]="'https://wa.me/' + mobile" target="_blank">
+          <div class="circle d-flex justify-content-center align-items-center">
+            <img src="assets/external/whatsappicon.png" class="whatsapp-img"/>
+          </div>
+        </a>
       </div>
-      <div class="col-12 col-md-4">
-        <span class="stat-value">10+</span><br />
-        <span class="stat-label">Years of experience</span>
+    </div>
+    <div class="d-flex flex-column gap-2 justify-content-center align-items-center home-img-content">
+      <div class="home-img-text-1">
+        Excellence in General & <br />
+        Gastrointestinal Surgery
+      </div>
+      <div class="bg-primary-blue" style="width: 70%; height: 2px"></div>
+      <div class="home-text-2">
+        Providing advanced laparoscopic and laser treatments with precision
+        and care.
+      </div>
+      <div class="my-4">
+        <button
+          class="btn-blue text-white"
+          (click)="onBookAnAppointmentBtnClick()"
+        >
+          Book an Appointment
+        </button>
       </div>
     </div>
   </div>
+
+    <div class="stats-section d-flex justify-content-around align-items-center p-3">
+      <div>
+        <div class="stat-value fw-bold text-center">500+</div>
+        <div class="stat-label">Happy Patients</div>
+      </div>
+      <div>
+        <div class="stat-value fw-bold text-center">100+</div>
+        <div class="stat-label">Surgeries</div>
+      </div>
+      <div>
+        <div class="stat-value fw-bold text-center">10+</div>
+        <div class="stat-label">Years of experience</div>
+      </div>
+    </div>
   <a
     [href]="'https://wa.me/' + mobile"
     class="text-black text-decoration-none whatsapp-fixed-icon m-3"
@@ -30,7 +81,7 @@
       class="d-flex flex-column gap-2 justify-content-center align-items-center"
     >
       <div class="section-heading text-primary-blue">About Me</div>
-      <div class="bg-primary-blue" style="width: 15%; height: 3px"></div>
+      <div class="bg-primary-blue" style="width: 100%; height: 3px"></div>
     </div>
     <div class="d-flex flex-column gap-4 align-items-center" style="width: 80%;">
       <div class="about-doctor-title text-center">

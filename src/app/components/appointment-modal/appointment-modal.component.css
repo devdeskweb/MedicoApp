@@ -11,3 +11,10 @@
     height: 0.625rem;
   }
 }
+
+modal-content > ::ng-deep{
+  .form-head{
+    height: 430px;
+    overflow: auto;
+  }
+}

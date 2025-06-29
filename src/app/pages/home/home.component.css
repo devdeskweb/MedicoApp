@@ -57,6 +57,61 @@
   background-color: #d12a7d;
 }
 
+.home-profile-bottom{
+  background-color: #083375;
+}
+.circle{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+}
+
+.dr-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-image: url('/assets/external/dr-sachin.png');
+  background-size: cover;         /* Ensures the image covers the whole circle */
+  background-position: center;    /* Keeps the image centered */
+  background-repeat: no-repeat;   /* Prevents repeating the image */
+}
+
+.home-profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.heading{
+  font-size: 20px;
+}
+.sub-heading{
+  font-size: 14px;
+}
+
+.home-img-content {
+  width: 80%;
+  padding: 1rem;
+}
+.home-img-text-1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.home-text-2{
+  font-size: 1rem;
+  width: 70%;
+}
+.btn-blue {
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: 8px 16px;
+  background-color: rgba(0, 26, 93, 1);
+  color: white;
+  border: none;
+}
+
 .whatsapp-fixed-icon {
   position: fixed;
   bottom: 1rem;
@@ -75,14 +130,13 @@
 }
 
 .stat-value {
-  font-size: clamp(2.5rem, 8vw, 3rem);
+  font-size: 30px;
   font-weight: 500;
 }
 
 .stat-label {
-  font-size: clamp(1.5rem, 5vw, 2rem);
+  font-size: 18px;
   font-weight: 500;
-  display: block;
 }
 
 .about-section-home {
@@ -167,6 +221,12 @@
     width: 100%;
     max-width: 40%;
     height: auto;
+  }
+  .stat-value {
+    font-size: 40px;
+  }
+  .stat-label {
+    font-size: 26px;
   }
 }
 
@@ -321,8 +381,14 @@
 .text-color-pink {
   color: rgba(238, 48, 145, 1)
 }
+.phone-img{
+  width: 40%;
+}
+.whatsapp-img{
+  width: 60%;
+}
 
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
   .whatsapp-fixed-icon img {
     width: 60px;
   }
@@ -337,7 +403,7 @@
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .about-section-home {
     padding: 2rem 1rem;
   }
@@ -353,9 +419,6 @@
   .testimonial-author {
     text-align: center;
   }
-}
-
-@media (max-width: 768px) {
   .home-heading-text-1{
     font-size: 30px;
   }
@@ -375,5 +438,69 @@
   .btn-pink {
     font-size: 1rem;
     padding: 0.5rem 0.75rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-img-content {
+    width: 90%;
+    padding: 0.4rem;
+    padding-bottom: 0;
+  }
+  .home-img-text-1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .home-text-2{
+    font-size: 0.725rem;
+    width: 80%;
+  }
+  .btn-blue {
+    font-size: 0.725rem;
+    border-radius: 3px;
+    padding: 6px 12px;
+    background-color: rgba(0, 26, 93, 1);
+    color: white;
+    border: none;
+  }
+  .timings-font{
+    font-size: 12px;
+  }
+  .circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+  }
+  
+  .dr-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url('/assets/external/dr-sachin.png');
+    background-size: cover;         /* Ensures the image covers the whole circle */
+    background-position: center;    /* Keeps the image centered */
+    background-repeat: no-repeat;   /* Prevents repeating the image */
+  }
+  
+  .phone-img{
+    width: 40%;
+  }
+  .whatsapp-img{
+    width: 60%;
+  }
+  
+  .heading{
+    font-size: 14px;
+  }
+  .sub-heading{
+    font-size: 10px;
+  }
+  .stat-value {
+    font-size: 24px;
+  }
+  
+  .stat-label {
+    font-size: 16px;
   }
 }

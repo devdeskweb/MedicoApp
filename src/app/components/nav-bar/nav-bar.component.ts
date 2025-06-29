@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { Subscription, filter } from 'rxjs';
 import { AppConstants } from 'src/app/constants/app-constants';
 
 @Component({
@@ -7,12 +9,37 @@ import { AppConstants } from 'src/app/constants/app-constants';
   styleUrls: ["./nav-bar.component.css"],
 })
 export class NavBarComponent implements OnInit {
-  constructor() {}
-
+  constructor(public router: Router) {}
+  canHide: boolean = false;
   mobile = AppConstants.Mobile;
   email = AppConstants.Email;
-  ngOnInit(): void {}
+
+  private routerSubscription!: Subscription;
+  
+  ngOnInit(): void {
+    this.updateCanHide(); // initial check
+
+    this.routerSubscription = this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(() => {
+        this.updateCanHide(); // update on route change
+      });
+    this.canHide = this.router.url === '/home' && window.innerWidth < 768;
+  }
   showPopover = false;
+
+  @HostListener('window:resize', [])
+  onResize() {
+    this.updateCanHide(); // update on screen resize
+  }
+
+  updateCanHide() {
+    this.canHide = this.router.url === '/home' && window.innerWidth < 768;
+  }
+
+  ngOnDestroy(): void {
+    this.routerSubscription?.unsubscribe();
+  }
 
   togglePopover() {
     this.showPopover = !this.showPopover;

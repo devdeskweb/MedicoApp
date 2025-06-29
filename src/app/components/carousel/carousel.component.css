@@ -59,10 +59,10 @@
 
 @media (min-width: 768px) {
   .home-img-text-1 {
-    font-size: 44px;
+    font-size: 28px;
   }
   .home-img-content {
-    width: 40%;
+    width: 60%;
     padding-left: 3rem;
   }
   .btn-blue {
@@ -70,7 +70,7 @@
     padding: 6px 12px;
   }
   .font-24 {
-    font-size: 24px;
+    font-size: 1.25rem;
   }
   .dr-name-text {
     font-size: 50px;
@@ -104,5 +104,61 @@
     width: 450px;
     position: absolute;
     z-index: -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-img-text-1 {
+    font-size: 28px;
+  }
+  .home-img-content {
+    width: 45%;
+    padding-left: 3rem;
+  }
+  .btn-blue {
+    font-size: 30px;
+    padding: 6px 12px;
+  }
+  .font-24 {
+    font-size: 1.25rem;
+  }
+  .dr-name-text {
+    font-size: 50px;
+    text-align: left;
+  }
+  .ul-text {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .dr-name-text {
+    font-size: 30px;
+  }
+  .ul-text {
+    font-size: 20px;
+  }
+  .btn-blue {
+    font-size: 24px;
+    padding: 5px 10px;
+  }
+  .carousal-img {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .dr-name-text {
+    font-size: 40px;
+  }
+  .ul-text {
+    font-size: 24px;
+  }
+  .btn-blue {
+    font-size: 24px;
+    padding: 6px 12px;
+  }
+  .carousal-img {
+    width: 300px;
   }
 }
