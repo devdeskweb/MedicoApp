@@ -18,13 +18,16 @@ export class NavBarComponent implements OnInit {
   
   ngOnInit(): void {
     this.updateCanHide(); // initial check
-
+    
     this.routerSubscription = this.router.events
-      .pipe(filter(event => event instanceof NavigationEnd))
-      .subscribe(() => {
-        this.updateCanHide(); // update on route change
-      });
+    .pipe(filter(event => event instanceof NavigationEnd))
+    .subscribe(() => {
+      this.updateCanHide(); // update on route change
+    });
     this.canHide = this.router.url === '/home' && window.innerWidth < 768;
+    this.router.events
+    .pipe(filter(event => event instanceof NavigationEnd))
+    .subscribe(() => this.closePopover());
   }
   showPopover = false;
 

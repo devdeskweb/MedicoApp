@@ -78,3 +78,26 @@
     width: 90%;
   }
 }
+
+@media (max-width: 992px) {
+  .active-nav {
+    border-bottom: 0.125rem solid black;
+    width: fit-content;
+  }
+}
+@media (max-width: 768px){
+  .nav-bar-text-contact-email {
+    font-size: 1rem;
+  }
+  .nav-bar-contact-email{
+    padding: 1rem;
+  }
+}
+@media (max-width: 500px){
+  .nav-bar-text-contact-email {
+    font-size: 0.8rem;
+  }
+  .nav-bar-contact-email{
+    padding: 0.725rem;
+  }
+}

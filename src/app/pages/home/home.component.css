@@ -228,6 +228,15 @@
   .stat-label {
     font-size: 26px;
   }
+  .home-heading-text-4{
+    font-size: 40px;
+  }
+  .font-20{
+    font-size: 20px;
+  }
+  .btn-pink{
+    font-size: 14px;
+  }
 }
 
 .procedure-card-image {
@@ -388,7 +397,7 @@
   width: 60%;
 }
 
-@media (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
   .whatsapp-fixed-icon img {
     width: 60px;
   }
@@ -401,9 +410,21 @@
   .doctor-image-overlay {
     height: 350px;
   }
+  .contact-details-text {
+    font-size: 1.2rem;
+  }
+  .home-heading-text-4{
+    font-size: 40px;
+  }
+  .font-20{
+    font-size: 20px;
+  }
+  .btn-pink{
+    font-size: 14px;
+  }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 501px) and (max-width: 768px) {
   .about-section-home {
     padding: 2rem 1rem;
   }
@@ -432,16 +453,19 @@
   }
 
   .home-heading-text-4 {
-    font-size: 1.75rem;
+    font-size: 35px;
   }
 
   .btn-pink {
     font-size: 1rem;
     padding: 0.5rem 0.75rem;
   }
+  .contact-details-text {
+    font-size: 1.2rem;
+  }
 }
 
-@media (max-width: 500px) {
+@media (min-width: 391px) and (max-width: 500px) {
   .home-img-content {
     width: 90%;
     padding: 0.4rem;
@@ -502,5 +526,102 @@
   
   .stat-label {
     font-size: 16px;
+  }
+  .contact-details-text {
+    font-size: 1.1rem;
+  }
+  .home-heading-text-4{
+    font-size: 30px;
+  }
+  .font-20{
+    font-size: 18px;
+  }
+  .btn-pink{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 390px) {
+  .home-img-content {
+    width: 90%;
+    padding: 0.3rem;
+    padding-bottom: 0;
+  }
+  .home-img-text-1 {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .home-text-2{
+    font-size: 0.5rem;
+    width: 80%;
+  }
+  .btn-blue {
+    font-size: 0.6rem;
+    border-radius: 2px;
+    padding: 5px 10px;
+    background-color: rgba(0, 26, 93, 1);
+    color: white;
+    border: none;
+  }
+  .timings-font{
+    font-size: 12px;
+  }
+  .circle{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+  }
+  
+  .dr-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-image: url('/assets/external/dr-sachin.png');
+    background-size: cover;         /* Ensures the image covers the whole circle */
+    background-position: center;    /* Keeps the image centered */
+    background-repeat: no-repeat;   /* Prevents repeating the image */
+  }
+  
+  .phone-img{
+    width: 40%;
+  }
+  .whatsapp-img{
+    width: 60%;
+  }
+  
+  .heading{
+    font-size: 12px;
+  }
+  .sub-heading{
+    font-size: 8px;
+  }
+  .stat-value {
+    font-size: 24px;
+  }
+  
+  .stat-label {
+    font-size: 12px;
+  }
+  .contact-details-text {
+    font-size: 1rem;
+  }
+  .nav-bar-title{
+    font-size: 1rem;
+  }
+  .home-heading-text-1{
+    font-size: 24px;
+  }
+  .home-heading-text-4{
+    font-size: 20px;
+  }
+  .font-20{
+    font-size: 16px;
+  }
+  .btn-pink{
+    font-size: 12px;
+  }
+  .shade-img{
+    padding: 1rem;
   }
 }

@@ -1,5 +1,5 @@
 <div class="nav-head d-flex flex-column position-relative">
-  <div class="d-flex justify-content-between p-4 mx-4 gap-5 align-items-center">
+  <div class="d-flex justify-content-between p-2 p-lg-4 mx-2 mx-lg-4 gap-2 gap-lg-5 align-items-center">
     <div class="d-flex justify-content-between align-items-center w-100">
       <div routerLink="/home" class="nav-bar-title cursor-pointer text-nowrap">
         Dr. Sachin Subbaraya
@@ -74,6 +74,8 @@
       >
         <span
           routerLink="/home"
+          routerLinkActive="active-nav"
+          [routerLinkActiveOptions]="{ exact: true }"
           class="d-block mb-2 cursor-pointer"
           (click)="closePopover()"
         >
@@ -81,6 +83,8 @@
         </span>
         <span
           routerLink="/about"
+          routerLinkActive="active-nav"
+          [routerLinkActiveOptions]="{ exact: true }"
           class="d-block mb-2 cursor-pointer"
           (click)="closePopover()"
         >
@@ -88,6 +92,8 @@
         </span>
         <span
           routerLink="/services"
+          routerLinkActive="active-nav"
+          [routerLinkActiveOptions]="{ exact: true }"
           class="d-block mb-2 cursor-pointer"
           (click)="closePopover()"
         >
@@ -95,6 +101,8 @@
         </span>
         <span
           routerLink="/gallery"
+          routerLinkActive="active-nav"
+          [routerLinkActiveOptions]="{ exact: true }"
           class="d-block mb-2 cursor-pointer"
           (click)="closePopover()"
         >
@@ -114,9 +122,9 @@
   <div *ngIf="!canHide"
     class="nav-bar-contact-email d-flex justify-content-center align-items-center"
   >
-    <div class="nav-bar-text-contact-email text-white d-flex">
+    <div class="nav-bar-text-contact-email text-white d-flex flex-md-row flex-lg-row flex-column">
       <div>Contact: <a [href]="'tel:' + mobile" class="text-decoration-none text-white">+91 7337774020</a></div>
-       <span class="px-2" > | </span> 
+       <span class="d-none d-md-block d-lg-block px-2" > | </span> 
        <div>Email: <a [href]="'mailto:' + email" class=" text-white text-decoration-none">Dr.SachinSubbaraya@Gmail.Com</a></div>
     </div>
   </div>
